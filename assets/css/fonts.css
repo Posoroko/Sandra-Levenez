@@ -6,6 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 
+@font-face {
+    font-family: "AnotherShabby";
+    src: local("AnotherShabby"), 
+    url(@/assets/fonts/Anothershabby.ttf) format("truetype");
+}
 
 
 

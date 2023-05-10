@@ -1,14 +1,14 @@
 body {
-    background-color: var(--color-a);
     min-height: 100vh;
 }
 
 a {
     cursor: pointer;
 }
+
 .mainWidth {
     width: min(var(--mainWidth), 100%);
-    padding: 0 30px;
+    /* padding: 0 30px; */
     margin: auto;
 }
 .mediumWidth {
@@ -36,8 +36,12 @@ a {
 .HeaderMediumHeight { height: calc(var(--large-header) * var(--medium-header-coef)); }
 .HeaderSmallHeight { height: calc(var(--large-header) * var(--small-header-coef)); }
 
-.sectionFullHeight { height: 100vh; }
+.sectionFullHeight { height: 80vh; }
 .sectionMediumHeight { height: calc(var(--section100vh) * var(--medium-section-coef)); }
 .sectionSmallHeight { height: calc(var(--section100vh) * var(--small-section-coef)); }
 
 
+:root {
+    --burger-max-width: 939px;
+
+}

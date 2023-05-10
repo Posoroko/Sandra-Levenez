@@ -83,6 +83,8 @@
 .marTop50 { margin-top: min(50px, 4vw); }
 .marTop100 { margin-top: min(100px, 6vw); }
 .marTop150 { margin-top: min(150px, 8vw);}
+.marTop200 { margin-top: min(200px, 10vw); }
+.marTop250 { margin-top: min(250px, 12vw); }
 
 .pad5 { padding: 5px; }
 .pad10 {padding: 10px;}
@@ -130,7 +132,7 @@
     pointer-events: all;
 }
 
-.z0000  { z-index: 0; }
+.z_0000  { z-index: 0; }
 .z_1000 { z-index: 1000; }
 .z_2000 { z-index: 2000; }
 .z_3000 { z-index: 3000; }

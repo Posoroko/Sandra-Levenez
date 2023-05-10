@@ -44,14 +44,12 @@
     height: 50px;
     background-color: #fff;
     padding: 5px;
+    box-shadow: 5px 5px 10px black;
 }
 .topBar_bar_icon {
     color: var(--brand-sec);
 }
-.topBar_bar_text {
-    font-size: 16px;
-    color: var(--brand-main);
-}
+
 
 .separatorBox {
     width: 20px;

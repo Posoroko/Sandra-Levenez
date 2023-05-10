@@ -17,7 +17,22 @@
         </div>
         
     </HeaderMain>
+
+    <SectionMain>
+        <template v-slot:leftBox>
+            <SectionTextBox :content="accueil.sectionPhoto" />
+        </template>
+
+        <template v-slot:rightBox>
+            <SectionRoundImage image="/images/conference.jpg" />
+        </template>
+    </SectionMain>
+
 </template>
+
+<script setup>
+import { accueil } from "@/assets/content/content"
+</script>
 
 <style scoped>
 .header_leftBox {

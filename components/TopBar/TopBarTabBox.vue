@@ -1,13 +1,13 @@
 <template>
     <div class="tabBox flex alignCenter">
-        <a :href="`call:${contact.telephone}`" class="topBarTab">
+        <a :href="`tel:${contact.telephone}`" class="topBarTab">
             <span class="topBar_bar_icon icon">call</span>
-            <span class="topBar_bar_text">{{ contact.telephone }}</span>
+            <span class="topBar_bar_text reactiveLink">{{ contact.telephone }}</span>
         </a>
 
-        <a :href="`call:${contact.email}`" class="topBarTab">
+        <a :href="`mailto:${contact.email}`" class="topBarTab">
             <span class="topBar_bar_icon icon">email</span>
-            <span class="topBar_bar_text">{{ contact.email }}</span>
+            <span class="topBar_bar_text reactiveLink">{{ contact.email }}</span>
         </a>
 
         <div class="topBarTab">
@@ -37,5 +37,9 @@ const contact = appConfig.contact
 .topBar_bar_text {
     font-size: 16px;
     font-weight: 600;
+    color: var(--brand-main);
+}
+.topBarTab:hover .reactiveLink {
+    color: var(--brand-sec);
 }
 </style>
