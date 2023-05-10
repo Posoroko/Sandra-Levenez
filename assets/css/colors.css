@@ -1,0 +1,41 @@
+:root {
+    --brand-main: #4416a1;
+    --brand-sec: #ef9e42;
+    --brand-funk: #f3c93f;
+
+    --color-a: white;
+    --color-b: rgb(197, 197, 197);
+    --color-c: rgb(128, 128, 128);
+    --color-d: rgb(59, 59, 59);
+    --color-e: rgb(0, 0, 0);
+}
+
+.bgc_main { background-color: var(--color-a); }
+.bgc_sec { background-color: var(--color-b); }
+
+.tc_main { color: var(--color-e); }
+
+* {
+    color: var(--color-e);
+}
+
+body {
+    background-color: #353535;
+}
+:root {
+    --main-text-color: black;
+}
+
+.textCol1 {
+    color: var(--main-text-color);
+}
+.textCol2 {
+    color: var(--brand-main);
+}
+.textCol3 {
+    color: var(--brand-sec);
+}
+
+* {
+    color: var(--main-text-color);
+}

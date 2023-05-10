@@ -1,0 +1,49 @@
+:root {
+    --mainWidth: 1200px;
+    --medium-width-coef: 0.75;
+    --small-width-coef: 0.5;
+}
+
+body {
+    background-color: var(--color-a);
+    min-height: 100vh;
+}
+
+a {
+    cursor: pointer;
+}
+.mainWidth {
+    width: min(var(--mainWidth), 100%);
+    padding: 0 30px;
+    margin: auto;
+}
+.mediumWidth {
+    width: min(calc(var(--mainWidth) * var(--medium-width-coef)), 100%);
+}
+.smallWidth {
+    width: min(calc(var(--mainWidth) * var(--small-width-coef)), 100%);
+}
+
+:root {
+    --mainWidth: 1400px;
+    --medium-width-coef: 0.75;
+    --small-width-coef: 0.5;
+
+    --large-header: 100vh;
+    --medium-header-coef: 0.75;
+    --small-header-coef: 0.5;
+
+    --section100vh: 100vh;
+    --medium-section-coef: 0.75;
+    --small-section-coef: 0.5;
+}
+
+.HeaderFullHeight { height: var(--large-header); }
+.HeaderMediumHeight { height: calc(var(--large-header) * var(--medium-header-coef)); }
+.HeaderSmallHeight { height: calc(var(--large-header) * var(--small-header-coef)); }
+
+.sectionFullHeight { height: 100vh; }
+.sectionMediumHeight { height: calc(var(--section100vh) * var(--medium-section-coef)); }
+.sectionSmallHeight { height: calc(var(--section100vh) * var(--small-section-coef)); }
+
+

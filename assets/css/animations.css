@@ -1,0 +1,6 @@
+:root {
+    --trans-quick: 100ms ease;
+    --trans-mid: 300ms ease;
+    --trans-slow: 500ms ease;
+    --trans-pop: cubic-bezier(0, .93, .25, 1.02);
+}
