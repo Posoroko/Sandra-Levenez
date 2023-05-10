@@ -35,6 +35,9 @@ body {
 .textCol3 {
     color: var(--brand-sec);
 }
+.whiteText {
+    color: white;
+}
 
 * {
     color: var(--main-text-color);
