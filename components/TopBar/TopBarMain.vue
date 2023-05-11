@@ -6,10 +6,7 @@
             <TopBarTabBox />
             <TopBarBurgerMenu />
 
-            <div class="separatorBox h100">
-                <DecorScratch way="vertical"/>
-            </div>
-
+            <!-- <div class="scratchBox"> <DecorSmallScratch /> </div> -->
             <TopBarSocialBox />
             <TopBarContactBox />
         </div>
@@ -55,7 +52,8 @@
     width: 20px;
 }
 @media (max-width: 939px) {
-    .topBar_bar .tabBox {
+    .topBar_bar .tabBox,
+    .scratchBox {
         display: none;
     }
     .topBar_bar .burgerBox {

@@ -1,6 +1,6 @@
 <template>
-    <ul :class="boxClass">
-        <li v-for="icon in icons" :key="icon.name">
+    <ul :class="boxClass" class="">
+        <li v-for="icon in icons" :key="icon.name" class="iconBox">
             <SocialMediaIcon :name="icon.name" :url="icon.url" width="null" />
         </li>
     </ul>
@@ -14,5 +14,14 @@ const props = defineProps({
 </script>
 
 <style scoped>
-
+.contactCardIconbox {
+    
+}
+.contactCardIconbox .iconBox {
+    width: clamp(40px, 4vw, 55px);
+    aspect-ratio: 1/1;
+}
+.contactCardIconbox:deep(.iconPath) {
+    fill: var(--brand-sec);
+}
 </style>

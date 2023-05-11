@@ -16,7 +16,7 @@ export const accueil = {
         title: "Entraînement",
         subtitle: "Proposer mes compétences de Coaching, Planification et Suivi",
         text: "« J’ai envie d’entraîner comme j’ai été entraînée » : avec passion, rigueur, expertise et beaucoup d’humanité.<br><br> L’entraînement est un champ dynamique et systémique , ce qui signif ie qu’il y a donc autant de possibilités de planifications qu’il y a d’athlètes qui aspirent à un suivi.<br><br>  Vous entrainer, c’est comprendre votre quotidien, vos singularités, vos motivations, et vous <span class='highlighted'>proposer et ajuster des contenus d’entraînement</span> en cohérence avec votre environnement et vos aspirations.",
-        quote: "J’ai envie d’entraîner comme j’ai été entraînée"
+        quote: "J’ai envie d’entraîner <br> comme j’ai été entraînée"
     },
     sectionLogo: {
         title: "Conférences",
@@ -24,3 +24,22 @@ export const accueil = {
         text: "De 1998 à 2022, les exigences du sport de haut-niveau m’ont permis de développer <span class='highlighted'>des routines de fonctionnement qui sont de véritables compétences professionnelles</span> : exigence, engagement, dépassement de soi, capacité à rebondir, gestion du stress, esprit d’équipe, résistance à l’effort."
     }
 }
+
+export const socialMedia = [
+    {
+        name: "facebook",
+        url: "https://www.facebook.com/sandra.levenez"
+    },
+    {
+        name: "instagram",
+        url: "https://www.instagram.com/sl_bzh/"
+    },
+    {
+        name: "twitter",
+        url: "https://twitter.com/slevenez?lang=fr"
+    },
+    {
+        name: "linkedin",
+        url: "https://www.linkedin.com/in/sandra-l%C3%A9v%C3%A9nez-270727257/"
+    }
+]

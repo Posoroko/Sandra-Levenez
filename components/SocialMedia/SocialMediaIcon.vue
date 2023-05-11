@@ -1,5 +1,5 @@
 <template>
-    <a v-if="name == 'facebook'" :href="url">
+    <a v-if="name == 'facebook'" :href="url" class="full">
         <svg version="1.1" class="socialNetworkIconSVG faceBookSVG" :class="{ 'widthFromProps' : width != 'null' }" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
             <path class="iconPath facebookPath" d="M12.9,28V16h-4v-4h4V9.9c0-4.1,2-5.9,5.4-5.9c1.6,0,2.5,0.1,2.9,0.2V8h-2.3c-1.4,0-1.9,0.8-1.9,2.3V12h4.2l-0.6,4h-3.6v12

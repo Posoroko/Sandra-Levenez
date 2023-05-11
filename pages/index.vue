@@ -28,6 +28,26 @@
         </template>
     </SectionMain>
 
+    <SectionMain>
+        <template v-slot:leftBox>
+            <SectionQuote :text="accueil.sectionQuote.quote" />
+        </template>
+
+        <template v-slot:rightBox>
+            <SectionTextBox :content="accueil.sectionQuote" />
+        </template>
+    </SectionMain>
+
+    <SectionMain>
+        <template v-slot:leftBox>
+            <SectionTextBox :content="accueil.sectionLogo" />
+        </template>
+
+        <template v-slot:rightBox>
+            <SectionLogoStroke />
+        </template>
+    </SectionMain>
+
 </template>
 
 <script setup>

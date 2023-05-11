@@ -1,9 +1,9 @@
 <template>
-    
-
     <slot />
     
     <TopBarMain />
+
+    <FooterMain />
 </template>
 
 <style>
