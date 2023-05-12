@@ -1,0 +1,49 @@
+.pageButton {
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.945);
+}
+
+.pageButton .buttonLogoBox {
+    width: 30px;
+}
+
+.pageButton .buttonText {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--brand-main);
+}
+
+.pageButton:hover {
+    background-color: var(--brand-main);
+    transition: 300ms ease;
+}
+
+.pageButton:hover .buttonText {
+    color: white;
+    transition: 300ms ease;
+}
+
+.pageButton:hover .st0 {
+    fill: white;
+    transition: 300ms ease;
+}
+
+.header_leftBox {
+    overflow: hidden;
+}
+
+.leftImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.rightImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

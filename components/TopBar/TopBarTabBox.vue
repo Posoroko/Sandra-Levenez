@@ -1,12 +1,12 @@
 <template>
     <div class="tabBox flex alignCenter">
         <a :href="`tel:${contact.telephone}`" class="topBarTab">
-            <span class="topBar_bar_icon icon">call</span>
+            <span class="topBar_bar_icon icon callIcon">call</span>
             <span class="topBar_bar_text reactiveLink">{{ contact.telephone }}</span>
         </a>
 
         <a :href="`mailto:${contact.email}`" class="topBarTab">
-            <span class="topBar_bar_icon icon">email</span>
+            <span class="topBar_bar_icon icon">alternate_email</span>
             <span class="topBar_bar_text reactiveLink">{{ contact.email }}</span>
         </a>
 
@@ -24,7 +24,7 @@ const contact = appConfig.contact
 </script>
 <style scoped>
 .tabBox {
-    gap: clamp(5px, 1.5vw, 30px);
+    gap: clamp(5px, 2vw, 40px);
 }
 .topBarTab {
     display: flex;
@@ -36,6 +36,7 @@ const contact = appConfig.contact
 }
 .topBar_bar_text {
     font-size: 16px;
+    letter-spacing: 1px;
     font-weight: 600;
     color: var(--brand-main);
 }

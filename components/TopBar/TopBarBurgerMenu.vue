@@ -15,7 +15,7 @@ const menu = ref(false)
 <style scoped>
 .menuIcon {
     font-size: 30px;
-    color: var(--brand-sec);
+    color: var(--brand-main);
 }
 .menuBox {
     top: 100%;

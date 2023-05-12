@@ -138,3 +138,7 @@
 .z_3000 { z-index: 3000; }
 .z_4000 { z-index: 4000; }
 .z_5000 { z-index: 5000; }
+
+.noScroll {
+    overflow: hidden;
+}

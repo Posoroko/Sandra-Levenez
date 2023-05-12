@@ -6,16 +6,14 @@
             <TopBarTabBox />
             <TopBarBurgerMenu />
 
-            <!-- <div class="scratchBox"> <DecorSmallScratch /> </div> -->
+            <div class="scratchBox"> <DecorSmallScratch /> </div>
             <TopBarSocialBox />
             <TopBarContactBox />
         </div>
 
-        
-
-        <div class="topBar_logoCardBox absolute top0 bottom0 left0">
+        <NuxtLink to="/" class="topBar_logoCardBox absolute top0 bottom0 left0">
             <TopBarLogoCard />
-        </div>
+        </NuxtLink>
     </div>
 </template>
 
@@ -52,15 +50,15 @@
     width: 20px;
 }
 @media (max-width: 939px) {
+    .logoCardPlaceHolder {
+        width: 200px;
+    }
     .topBar_bar .tabBox,
     .scratchBox {
         display: none;
     }
     .topBar_bar .burgerBox {
         display: flex;
-    }
-    .topBar_bar .separatorBox {
-        display: none;
     }
     .topBarSocialIconbox {
         display: none;
@@ -69,15 +67,26 @@
         display: flex;
     }
 }
+@media (max-width: 1049px) {
+
+    .topBar_bar .scratchBox {
+        display: none;
+    }
+
+}
+@media (min-width: 1050px) {
+
+    .topBar_bar .scratchBox {
+        display: block;
+    }
+
+}
 @media (min-width: 940px) {
     .topBar_bar .tabBox {
         display: flex;
     }
     .topBar_bar .burgerBox {
         display: none;
-    }
-    .topBar_bar .separatorBox {
-        display: block;
     }
     .topBarSocialIconbox {
         display: flex;

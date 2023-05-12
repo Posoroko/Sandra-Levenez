@@ -3,4 +3,6 @@
     --trans-mid: 300ms ease;
     --trans-slow: 500ms ease;
     --trans-pop: cubic-bezier(0, .93, .25, 1.02);
+
+    --round-image: cubic-bezier(0, 1.12, .31, .98);
 }

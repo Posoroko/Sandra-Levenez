@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         '@/assets/css/colors.css',
         '@/assets/css/fonts.css',
         '@/assets/css/animations.css',
+        '@/assets/css/pages.css',
     ],
     ssr: false,
 })

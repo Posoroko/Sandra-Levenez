@@ -4,6 +4,8 @@
     <TopBarMain />
 
     <FooterMain />
+
+    <ModalImage />
 </template>
 
 <style>

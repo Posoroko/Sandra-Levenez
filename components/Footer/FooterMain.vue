@@ -1,5 +1,5 @@
 <template>
-    <footer class="flex column alignCenter">
+    <footer class="flex column alignCenter marTop100">
 
         <div class="mainWidth pad20">
             <address class="contactCard">
@@ -13,12 +13,12 @@
             
                 <div class="contactBox flex column justifyCenter alignStart gap20">
                     <a :href="`tel:${contact.telephone}`" class="contactBoxLine flex alignCenter gap10">
-                        <span class="contactCard_icon icon">call</span>
+                        <span class="contactCard_icon icon callIcon">call</span>
                         <span class="contactCard_text reactiveLink">{{ contact.telephone }}</span>
                     </a>
 
                     <a :href="`mailto:${contact.email}`" class="contactBoxLine flex alignCenter gap10">
-                        <span class="contactCard_icon icon">email</span>
+                        <span class="contactCard_icon icon">alternate_email</span>
                         <span class="contactCard_text reactiveLink">{{ contact.email }}</span>
                     </a>
 
@@ -46,9 +46,9 @@
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
                 <li class="linkText"><NuxtLink to="/">MENTIONS LEGALES</NuxtLink></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
-                <li class="linkText"><a href="https://www.comkreiz.com/">COM KREIZ</a></li>
+                <li class="linkText"><a href="https://www.comkreiz.com/">WEB DESIGNER : COM KREIZ</a></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
-                <li class="linkText"><a href="https://posoroko.com/">Studio Posoroko</a></li>
+                <li class="linkText "><a class="raleWay" href="https://posoroko.com/">DEV : STUDIO POSOROKO</a></li>
             </ul>
         </nav>
 <!-- scratchBox -->
@@ -80,6 +80,7 @@ import { socialMedia } from '@/assets/content/content'
 .contactCard_icon {
     font-size: 24px;
     color: var(--brand-sec);
+    font-style: normal;
 }
 .contactCard_text {
     font-family: "Montserrat", sans-serif;
@@ -101,7 +102,7 @@ import { socialMedia } from '@/assets/content/content'
    place-items: center;
 }
 .linkText{
-    font-size: 16px;
+    font-size: 13px;
     margin: 10px 0;
     
 }
@@ -159,6 +160,7 @@ import { socialMedia } from '@/assets/content/content'
 .contactCardScratchBox {
     margin: 5px;
     position: relative;
+    pointer-events: none;
 }
 .contactCardScratchBox:deep(.thinScratchSVG) {
     position: absolute;

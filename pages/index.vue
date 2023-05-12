@@ -1,74 +1,14 @@
 <template>
-    <HeaderMain>
-        <div class="full flex gap5">
-            <div class="header_leftBox w50 h100">
-                <img class="leftImage" src="/images/headers/accueil1.png" alt="">
-            </div>
-
-            <div class="header_rightBox w50 h100 flex column gap5 ">
-                <div class="header_rightBox_top w100 h50">
-                    <img class="rightImage" src="/images/headers/accueil2.png" alt="">
-                </div>
-
-                <div class="header_rightBox_bottom w100 h50">
-                    <img class="rightImage" src="/images/headers/accueil3.png" alt="">
-                </div>
-            </div>
-        </div>
-        
-    </HeaderMain>
-
-    <SectionMain>
-        <template v-slot:leftBox>
-            <SectionTextBox :content="accueil.sectionPhoto" />
-        </template>
-
-        <template v-slot:rightBox>
-            <SectionRoundImage image="/images/conference.jpg" />
-        </template>
-    </SectionMain>
-
-    <SectionMain>
-        <template v-slot:leftBox>
-            <SectionQuote :text="accueil.sectionQuote.quote" />
-        </template>
-
-        <template v-slot:rightBox>
-            <SectionTextBox :content="accueil.sectionQuote" />
-        </template>
-    </SectionMain>
-
-    <SectionMain>
-        <template v-slot:leftBox>
-            <SectionTextBox :content="accueil.sectionLogo" />
-        </template>
-
-        <template v-slot:rightBox>
-            <SectionLogoStroke />
-        </template>
-    </SectionMain>
+    <PageMain :pageContent="accueil" />
 
 </template>
 
 <script setup>
 import { accueil } from "@/assets/content/content"
+
 </script>
 
 <style scoped>
-.header_leftBox {
-    overflow: hidden;
-}
-.leftImage {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: left;
-}
-.rightImage{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+
 </style>
 
