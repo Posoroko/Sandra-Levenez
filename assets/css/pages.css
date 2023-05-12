@@ -1,4 +1,5 @@
 .pageButton {
+    background-color: white;
     padding: 10px 20px;
     border-radius: 4px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.945);
@@ -46,4 +47,8 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.scratchBox {
+    width: 50%;
 }

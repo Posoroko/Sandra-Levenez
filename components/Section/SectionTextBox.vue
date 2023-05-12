@@ -18,9 +18,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.scratchBox {
-    width: 50%;
-}
+
 .textBox:deep(.initial) {
    color: var(--brand-sec);
 }

@@ -6,6 +6,7 @@
     <FooterMain />
 
     <ModalImage />
+    <ModalText />
 </template>
 
 <style>

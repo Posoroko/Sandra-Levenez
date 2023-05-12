@@ -5,7 +5,7 @@
 
         <HeaderPileje />
 
-        <HeaderMenuMain />
+        
 
     </header>
 </template>

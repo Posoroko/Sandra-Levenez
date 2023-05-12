@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         '@/assets/css/fonts.css',
         '@/assets/css/animations.css',
         '@/assets/css/pages.css',
+        '@/assets/css/modals.css',
     ],
-    ssr: false,
+    ssr: true,
 })

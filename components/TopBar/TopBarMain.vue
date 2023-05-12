@@ -6,8 +6,10 @@
             <TopBarTabBox />
             <TopBarBurgerMenu />
 
-            <div class="scratchBox"> <DecorSmallScratch /> </div>
+            <div class="topBarScratchBox"> <DecorSmallScratch /> </div>
+
             <TopBarSocialBox />
+            
             <TopBarContactBox />
         </div>
 
@@ -54,7 +56,7 @@
         width: 200px;
     }
     .topBar_bar .tabBox,
-    .scratchBox {
+    .topBarScratchBox {
         display: none;
     }
     .topBar_bar .burgerBox {
@@ -69,14 +71,14 @@
 }
 @media (max-width: 1049px) {
 
-    .topBar_bar .scratchBox {
+    .topBar_bar .topBarScratchBox {
         display: none;
     }
 
 }
 @media (min-width: 1050px) {
 
-    .topBar_bar .scratchBox {
+    .topBar_bar .topBarScratchBox {
         display: block;
     }
 

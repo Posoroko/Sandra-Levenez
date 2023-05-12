@@ -12,9 +12,16 @@ export const openImageInModal = (imageUrl) => {
 export const closeModal = (id) => {
     toggleSiteScroll()
     let modal = document.getElementById(id)
-    console.log(modal)
-    let img = modal.querySelector('.modalImage_img')
-    img.remove()
+
+    if(id === 'image-modal') {
+        let img = modal.querySelector('.modalImage_img')
+        img.remove()
+    } else if(id === 'text-modal') {
+        let h3 = modal.querySelector('.modalTitle')
+        let p = modal.querySelector('.modalText')
+        h3.remove()
+        p.remove()
+    }
     modal.close()
 }
 
@@ -32,4 +39,23 @@ const toggleSiteScroll = () => {
     } else {
         document.body.classList.add('noScroll')
     }
+}
+
+export const readInModal = (firstName, text) => {
+    const modal = document.getElementById('text-modal')
+    const h3 = document.createElement('h3')
+    h3.classList.add('modalTitle')
+    h3.innerText = firstName
+    modal.appendChild(h3)
+    
+    const p = document.createElement('p')
+    p.innerText = text
+    p.classList.add('modalText')
+    modal.appendChild(p)
+
+    
+    
+    toggleSiteScroll()
+    
+    modal.showModal()
 }

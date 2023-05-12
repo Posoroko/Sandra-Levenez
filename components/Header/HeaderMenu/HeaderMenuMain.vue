@@ -1,5 +1,5 @@
 <template>
-    <nav class="menuBox mainWidth">
+    <nav class="menuBox">
         <NuxtLink class="menuButton menuButton1" to="/coaching">
             <img class="menuButtonImage" src="/images/montre.jpg" alt="">
             <div class="cover cover1"></div>
@@ -12,7 +12,7 @@
             <p class="buttonText">CONFÉRENCES</p>
         </NuxtLink>
 
-        <NuxtLink class="menuButton menuButton3" to="#">
+        <NuxtLink class="menuButton menuButton3" to="/livre-d-or">
             <img class="menuButtonImage" src="/images/gesture.jpg" alt="">
             <div class="cover cover3"></div>
             <p class="buttonText">LIVRE D'OR</p>
@@ -22,15 +22,15 @@
 
 <style scoped>
 .menuBox {
-    
+    width: 100%;
     justify-content: center;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    bottom: 50%;
+    left: 0%;
+    transform: translateY(50%);
 }
 .menuButton {
-    width: 20%;
+    width: max(180px, 12vw);
     aspect-ratio: 1/1;
     border-radius: 15px;
     border: 2px solid white;
@@ -39,19 +39,7 @@
     position: relative;
     box-shadow: 5px 5px 10px black;
 }
-.menuButton1 {
-    /* border-top-left-radius: 15px; */
-    /* border-bottom-left-radius: 15px; */
-}
 
-.menuButton2 {
-    transform: translateX(-2px);
-}
-.menuButton3 {
-    /* border-top-right-radius: 15px; */
-    /* border-bottom-right-radius: 15px; */
-    transform: translateX(-4px);
-}
 .menuButton2 {
     transform: translateX(-2px);
 }
@@ -94,7 +82,7 @@
 }
 .buttonText {
     font-family: "AnotherShabby";
-    font-size: clamp(22px, 2vw, 30px);
+    font-size: clamp(22px, 1.5vw, 30px);
     color: white;
     position: absolute;
     bottom: 10%;
