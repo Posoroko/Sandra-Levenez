@@ -14,9 +14,9 @@
 }
 
 #image-modal .modalImage_img {
-    width: min(90vw, 1000px);
+    max-height: 90vh;
     box-shadow: 5px 5px 10px black;
-    
+    border-radius: 10px;
 }
 
 .modalCloseBtn {
@@ -38,22 +38,34 @@
     background-color: rgba(0, 0, 0, 0.781);
     transform: rotate(90deg);
 }
-
 #text-modal {
+    overflow: hidden;
+    /* padding: 20px; */
+}
+#text-modal .full{
     width: min(90vw, 600px);
-    min-height: min(90vw, 600px);
+    height: min(90vh, 600px);
+    box-shadow: 5px 5px 10px black;
     padding: max(20px, 5vw);
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
+    overflow: scroll;
 }
+
 .modalTitle {
     font-size: 30px;
 }
+#text-modal *{
+    color: white;
+}
 .modalText {
-    color: black;
+    /* box-shadow: inset 0px 0px 30px black; */
+}
+.modalText *{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
+    
 }

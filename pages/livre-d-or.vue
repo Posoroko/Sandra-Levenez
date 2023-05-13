@@ -5,7 +5,7 @@
         </div>
     </HeaderMain>
 
-    <main class="pad20">
+    <main class="pad10" id="bookMain">
         <div class="mainWidth">
             <div class="">
                 <h1 class="bodyTitle">Livre d'or</h1>
@@ -16,7 +16,7 @@
     
             <section class="marTop50" v-for="(array, indexArray) in messages" :key="indexArray">
                 <div class="mainWidth flex gap30 wrap justifyCenter cardContainer">
-                    <article class="bookCard flex column justifyBetween gap25" v-for="(message, indexMessage) in array" :key="message.id">
+                    <article class="bookCard relative flex column justifyBetween gap25" v-for="(message, indexMessage) in array" :key="message.id">
                         <div class="flex column">
                             <div class="flex column gap10">
                                 <h3 class="bookCardTitle">{{ message.firstName }}</h3>
@@ -24,16 +24,20 @@
                                     <span class="icon bookStar" v-for="indexMessage in 5" :key="indexMessage">star</span>
                                 </p>
                             </div>
-                            <p class="bookCardText marTop20">
-                                {{ message.message.slice(0, cardPreviewLength) }}
-                                <span class="dots" v-if="message.message.length > cardPreviewLength">...</span>
-                            </p> 
+                            <div class="bookCardTextBox marTop20">
+                                <div class="text flex column gap10" v-html="`${message.message}`">
+
+                                </div>
+                                
+                                <!-- <span class="dots" v-if="message.message.length > cardPreviewLength">...</span> -->
+                            </div> 
                         </div>
-                        <div class="buttonBox centered w100 flex">
+                        <div class="buttonBox centered">
                             <button class="pageButton flex slignCenter gap10 pointer" 
                                 :data-indexArray="indexArray"
                                 :data-indexMesage="indexMessage"
                                 :data-firstName="message.firstName"
+                                
                                 @click.prevent="handleClick" 
                                 v-if="message.message.length > cardPreviewLength">
                                 
@@ -59,16 +63,28 @@ import { readInModal } from '@/composables/utilities'
 const appConfig = useAppConfig();
 const directusItems = appConfig.directus.items;
 const cardPreviewLength = 500
+let bookMain = null
+
+
+onMounted(() => {
+    bookMain = document.getElementById('bookMain')
+    const styleTags = bookMain.getElementsByTagName('style')
+    console.log(styleTags)
+})
 
 const handleClick = (e) => {
     
     const btn = e.currentTarget
+    // get color of card to inject in the modal
+    const card = btn.parentNode.parentNode
+    const color = window.getComputedStyle(card).backgroundColor
+
     const indexArray = btn.getAttribute('data-indexArray')
     const indexMessage = btn.getAttribute('data-indexMesage')
     const firstName = btn.getAttribute('data-firstName')
     const message = messages.value[indexArray][indexMessage].message
 
-    readInModal(firstName, message)
+    readInModal(firstName, message, color)
 }
 
 const { data: messages } = await useAsyncData(
@@ -94,16 +110,25 @@ const { data: messages } = await useAsyncData(
     width: 250px;
 }
 .bookCard {
-    width: 30%;
-    padding: 20px 30px;
+    width: min(350px, 100%);
+    /* height: 600px; */
+    padding: 25px min(5vw, 30px) 0 min(5vw, 30px);
     border-radius: 10px;
+    overflow: hidden;
 }
-.dots, .bookCardText {
+.bookCardTextBox {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+.dots, .bookCardTextBox:deep(*) {
     color: white;
+    font-size: clamp(14px, 2vw, 16px);
     letter-spacing: 1px;
     line-height: 26px;
 }
-.cardContainer .bookCard:nth-child(3n+1) {
+.cardContainer .bookCard:nth-child(3n+1){
     background-color: var(--brand-funk);
 }
 .cardContainer .bookCard:nth-child(3n+2) {
@@ -111,6 +136,20 @@ const { data: messages } = await useAsyncData(
 }
 .cardContainer .bookCard:nth-child(3n+3) {
     background-color: var(--brand-main);
+}
+.buttonBox{
+    padding: 50px 0 30px 0;
+    width: 105%;
+    transform: translateX(-2.5%);
+}
+.cardContainer .bookCard:nth-child(3n+1) .buttonBox {
+    background: linear-gradient(0deg, rgba(243,201,63,1) 0%, rgba(243,201,63,0.5256303204875701) 90%, rgba(243,201,63,0) 100%);
+}
+.cardContainer .bookCard:nth-child(3n+2) .buttonBox {
+    background: linear-gradient(0deg, rgba(239,158,66,1) 0%, rgba(239,158,66,0.4864146342130602) 90%, rgba(239,158,66,0) 100%);
+}
+.cardContainer .bookCard:nth-child(3n+3) .buttonBox {
+    background: linear-gradient(0deg, rgba(68,22,161,1) 0%, rgba(68,22,161,0.7217087518601191) 80%, rgba(68,22,161,0) 100%);
 }
 .bookCardTitle {
     font-size: 24px;
@@ -125,4 +164,5 @@ const { data: messages } = await useAsyncData(
 .milesBox {
     padding: min(10vw, 150px) 20px;
 }
+
 </style>

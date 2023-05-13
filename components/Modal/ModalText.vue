@@ -1,5 +1,14 @@
 <template>
     <dialog id="text-modal" class="modal">
+        <div class="full ">
+            <h1 class="modalTitle"></h1>
+            <p class="flex justifyCenter">
+                <span class="icon bookStar" v-for="indexMessage in 5" :key="indexMessage">star</span>
+            </p>
+            <div class="modalText flex column gap10"></div>
+            
+        </div>
+
         <span class="modalCloseBtn icon pointer" @click="closeModal('text-modal')">close</span>
     </dialog>
 </template>
