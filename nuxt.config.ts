@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    
     css: [
         '@/assets/css/reset.css',
         '@/assets/css/main.css',
@@ -11,4 +12,15 @@ export default defineNuxtConfig({
         '@/assets/css/modals.css',
     ],
     ssr: true,
+    extends: [
+        'nuxt-seo-kit'
+    ],
+    runtimeConfig: {
+        public: {
+            siteUrl: 'https://sandralevenez.netlify.app',
+            siteName: 'ASandra Levenez',
+            siteDescription: 'Sandra Levenez - coaching et conférences',
+            language: 'fr-FR',
+        }
+    },
 })

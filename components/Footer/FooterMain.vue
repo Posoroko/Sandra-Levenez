@@ -103,8 +103,8 @@ import { socialMedia } from '@/assets/content/content'
 }
 .linkText{
     font-size: 13px;
+    text-decoration: underline white;
     margin: 10px 0;
-    
 }
 .linkText a {
     color: white;

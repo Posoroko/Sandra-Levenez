@@ -45,19 +45,22 @@ export const coaching = {
         tags: {
             one: "  <span class='highlighted'>  </span>",
             two: "  <br><br> "
-        }
+        },
+        logo: false
     },
     sectionQuote: {
         quote: "",
         title: "Coaching pour tous",
         subtitle: "Du débutant au professionnel",
         text: "Quelque que soit votre niveau, vous avez un ou des objectifs, vous êtes motivés : ce sont les seuls prérequis.",
+        logo: false
 
     },
     sectionLogo: {
         title: "Coaching au juste prix",
         subtitle: "Particulier, Club, Entreprise",
-        text: "Afin de vous proposer une prestation cohérente en terme de tarifs, il me semble logique et indispensable d’échanger avec vous. <br><br>A l’issue de cet échange, je serai alors en mesure de vous faire une proposition de tarif. <br><br>Athlète, Particulier, Club, Entreprise : individuel ou groupe, déplacements sur demande."
+        text: "Afin de vous proposer une prestation cohérente en terme de tarifs, il me semble logique et indispensable d’échanger avec vous. <br><br>A l’issue de cet échange, je serai alors en mesure de vous faire une proposition de tarif. <br><br>Athlète, Particulier, Club, Entreprise : individuel ou groupe, déplacements sur demande.",
+        logo: false
     }
 }
 
@@ -71,13 +74,15 @@ export const conferences = {
             url_Small: "/images/conference.jpg",
             url_Large: "/images/conference.jpg",
             imageAlt: "Sandra Levenez à l'arrivée d'une course",
-        }
+        },
+        logo: false
     },
     sectionQuote: {
         quote: "logo",
         title: "Conférences : pourquoi ?",
         subtitle: "Des problématiques à partager, à questionner, à utiliser et valoriser",
         text: "Mon expérience de la performance s’inscrit sur 24 années de pratiques sportives exercées à haut-niveau avec la particularité d’avoir évolué au sein de 3 fédérations différentes (athlétisme, triathlon/duathlon, et cyclisme), et toujours cette recherche de <span class='highlighted'> l’excellence pour dénominateur commun. </span><br><br>  Réfléchir, analyser, mettre en relation, planifier, s’entraîner, réguler, s’adapter, négocier, et autant de compétences que je veux partager et mettre en perspective pour favoriser un<span class= 'highlighted' > climat motivationnel de performance, d’engagement, de persévérance, de cohésion. </span> <br><br> Me contacter pour échanges et analyses précises de vos besoins.",
+        logo: false
 
     },
     sectionLogo: null
@@ -101,3 +106,60 @@ export const socialMedia = [
         url: "https://www.linkedin.com/in/sandra-l%C3%A9v%C3%A9nez-270727257/"
     }
 ]
+
+export const palmares = {
+    headerImage: "/images/headers/header-accueil.png",
+    sectionLogo: {
+        title: "Mon palmares", 
+        subtitle:'Athlétisme/Cross country',
+        list: [
+            'Championne de France de cross Junior 1997',
+            'Championne de France 3000m Junior 1997',
+            '3ème championnat d’Europe 3000m Junior 1997',
+            'Championne de France de cross espoir 2000',
+            '3ème championnat de France Elite de cross en 2010',
+            '9 fois championne de Bretagne de cross long',
+            '4 fois championne de Bretagne de cross court',
+        ],
+        image: null,
+        logo: true
+    },
+    sectionPhoto1: {
+        title: null,
+        subtitle: 'Duathlon',
+        list: [
+                '2 fois championne du monde(2014, 2019)',
+                '2 fois championne du monde Relais(2011, 2014)',
+                '4 fois championne d’europe(2011, 2015, 2017, 2018)',
+                '2 fois championne d’europe de Relais(2008, 2009)',
+                '3 fois 2ème championnat du monde(2009, 2010, 2013)',
+                '3 fois 3ème championnat du monde(2011, 2012, 2015)',
+                '9 fois championne de France(2007, 2010, 2011, 2012, 2013, 2014, 2015 2018 et 2019)'
+        ],
+        image: {
+            url_Small: "/images/conference.jpg",
+            url_Large: "/images/conference.jpg",
+            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+        },
+        button: false,
+        logo: false
+    },
+    sectionPhoto2: {
+        title: null,
+        subtitle: 'Cycliste Pro (Arkéa : 2020 & 2021; Cofidis: 2022) ',
+        list: [
+            '4ème France CLM(2020)',
+            '2ème Périgord Ladies(2020)',
+            '5ème Tour de l’Ardèche(2020)',
+            '27ème championnat du monde à Imola(2020)',
+            '20ème La Flèche Wallonne(2022)',
+        ],
+        image: {
+            url_Small: "/images/conference.jpg",
+            url_Large: "/images/conference.jpg",
+            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+        },
+        button: false,
+        logo: false
+    }
+}

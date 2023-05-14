@@ -5,44 +5,46 @@
             </div>
         </HeaderMain>
 
-        <SectionMain>
-            <template v-slot:leftBox>
-                <SectionTextBox :content="pageContent.sectionPhoto" />
-            </template>
+        <main>
+            <SectionMain>
+                <template v-slot:leftBox>
+                    <SectionTextBox :content="pageContent.sectionPhoto" />
+                </template>
 
-            <template v-slot:rightBox>
-                <SectionRoundImage :image="pageContent.sectionPhoto.image" />
-            </template>
-        </SectionMain>
+                <template v-slot:rightBox>
+                    <SectionRoundImage :image="pageContent.sectionPhoto.image" />
+                </template>
+            </SectionMain>
 
-        <SectionMain>
-            <template v-slot:leftBox>
-                <SectionQuote v-if="pageContent.sectionQuote.quote.length > 10" :text="pageContent.sectionQuote.quote" />
-                <SectionLogoStroke v-if="pageContent.sectionQuote.quote == 'logo'" />
-            </template>
+            <SectionMain>
+                <template v-slot:leftBox>
+                    <SectionQuote v-if="pageContent.sectionQuote.quote.length > 10" :text="pageContent.sectionQuote.quote" />
+                    <SectionLogoStroke v-if="pageContent.sectionQuote.quote == 'logo'" />
+                </template>
 
-            <template v-slot:rightBox>
-                <SectionTextBox :content="pageContent.sectionQuote" />
-                <div v-if="pageContent.sectionQuote.button == 'palmares'" class="buttonBox pad20 w100 flex">
-                    <NuxtLink to="#" class="pageButton flex slignCenter gap10">
-                        <div class="buttonLogoBox">
-                            <DecorLogoFill />
-                        </div>
-                        <span class="buttonText centered">Mon palmarès</span>
-                    </NuxtLink>
-                </div>
-            </template>
-        </SectionMain>
+                <template v-slot:rightBox>
+                    <SectionTextBox :content="pageContent.sectionQuote" />
+                    <div v-if="pageContent.sectionQuote.button == 'palmares'" class="buttonBox pad20 w100 flex">
+                        <NuxtLink to="mon-palmares" class="pageButton flex slignCenter gap10">
+                            <div class="buttonLogoBox">
+                                <DecorLogoFill />
+                            </div>
+                            <span class="buttonText centered">Mon palmarès</span>
+                        </NuxtLink>
+                    </div>
+                </template>
+            </SectionMain>
 
-        <SectionMain v-if="pageContent.sectionLogo">
-            <template v-slot:leftBox>
-                <SectionTextBox :content="pageContent.sectionLogo" />
-            </template>
+            <SectionMain v-if="pageContent.sectionLogo">
+                <template v-slot:leftBox>
+                    <SectionTextBox :content="pageContent.sectionLogo" />
+                </template>
 
-            <template v-slot:rightBox>
-                <SectionLogoStroke />
-            </template>
-        </SectionMain>
+                <template v-slot:rightBox>
+                    <SectionLogoStroke />
+                </template>
+            </SectionMain>
+        </main>
 </template>
 
 <script setup>
