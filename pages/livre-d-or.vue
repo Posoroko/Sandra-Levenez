@@ -60,6 +60,13 @@
 
 <script setup>
 import { readInModal } from '@/composables/utilities'
+
+definePageMeta({
+    title: "SandraLevenez | Livre d'or",
+    description: 'Avis des clients de Sandra Levenez',
+    image: '/images/coaching.jpg',
+})
+
 const appConfig = useAppConfig();
 const directusItems = appConfig.directus.items;
 const cardPreviewLength = 500

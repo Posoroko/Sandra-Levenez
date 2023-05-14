@@ -41,4 +41,10 @@
 
 <script setup>
 import { palmares } from '@/assets/content/content'
+
+definePageMeta({
+    title: "SandraLevenez | Mon palmarès",
+    description: 'Palmarès de Sandra Levenez, sportive de haut niveau',
+    image: '/images/coaching.jpg',
+})
 </script>

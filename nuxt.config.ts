@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    
+    app: {
+        head: {
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
+            title: 'Sandra Levenez, coach sportif et conférencière',
+        }
+    },
     css: [
         '@/assets/css/reset.css',
         '@/assets/css/main.css',
@@ -18,8 +24,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: 'https://sandralevenez.netlify.app',
-            siteName: 'ASandra Levenez, coach sportif et conférencière',
-            siteDescription: 'Sandra Levenez - coaching et conférences',
+            siteName: 'Sandra Levenez, coach sportif et conférencière',
+            siteDescription: 'Site de Sandra Levenez, coaching et conférences',
             language: 'fr-FR',
         }
     },

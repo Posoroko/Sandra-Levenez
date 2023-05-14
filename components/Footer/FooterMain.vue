@@ -42,9 +42,9 @@
             <ul class="mainWidth flex gap10 justifyAround wrap">
                 <li class="linkText"><NuxtLink to="/">ACCUEIL</NuxtLink></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
-                <li class="linkText"><NuxtLink to="/">PLAN DU SITE</NuxtLink></li>
+                <li class="linkText"><NuxtLink to="/plan-du-site">PLAN DU SITE</NuxtLink></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
-                <li class="linkText"><NuxtLink to="/">MENTIONS LEGALES</NuxtLink></li>
+                <li class="linkText"><NuxtLink to="/mentions-legales">MENTIONS LEGALES</NuxtLink></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
                 <li class="linkText"><a href="https://www.comkreiz.com/">WEB DESIGNER : COM KREIZ</a></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
