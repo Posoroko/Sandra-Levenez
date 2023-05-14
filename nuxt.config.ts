@@ -18,9 +18,13 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: 'https://sandralevenez.netlify.app',
-            siteName: 'ASandra Levenez',
+            siteName: 'ASandra Levenez, coach sportif et conférencière',
             siteDescription: 'Sandra Levenez - coaching et conférences',
             language: 'fr-FR',
         }
     },
+    routeRules: {
+        // for all routes to be indexed by search engines
+        '/*': { index: true },
+    }
 })

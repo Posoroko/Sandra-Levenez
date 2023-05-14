@@ -40,6 +40,7 @@ const handleImageClick = (e) => {
 .roundImageFrame {
     width: 75%;
     aspect-ratio: 1/1;
+    overflow: hidden;
 }
 .imageFrame {
     position: absolute;
