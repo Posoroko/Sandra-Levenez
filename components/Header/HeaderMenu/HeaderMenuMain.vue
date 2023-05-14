@@ -1,5 +1,5 @@
 <template>
-    <nav class="menuBox">
+    <nav class="menuBox flex">
         <NuxtLink class="menuButton menuButton1" to="/coaching">
             <img class="menuButtonImage" src="/images/montre.jpg" alt="">
             <div class="cover cover1"></div>
@@ -19,18 +19,43 @@
         </NuxtLink>
     </nav>
 </template>
+<script setup>
+const emits = defineEmits(['closeMenu'])
+
+
+
+</script>
 
 <style scoped>
 .menuBox {
     width: 100%;
     justify-content: center;
-    position: absolute;
-    bottom: 50%;
-    left: 0%;
-    transform: translateY(50%);
+    
+}
+@media (max-width: 939px) {
+    .menuBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuButton {
+        width: 100%;
+        height: 100px;
+    }
+}
+@media (min-width: 940px) {
+    .menuBox {
+        flex-direction: row;
+        position: absolute;
+        bottom: 50%;
+        left: 0%;
+        transform: translateY(50%);
+    }
+    .menuButton {
+        width: max(180px, 12vw);
+    }
 }
 .menuButton {
-    width: max(180px, 12vw);
+    
     aspect-ratio: 1/1;
     border-radius: 15px;
     border: 2px solid white;
@@ -47,16 +72,6 @@
     transform: translateX(-4px);
 }
 
-@media (max-width: 939px) {
-    .menuBox {
-        display: none;
-    }
-}
-@media (min-width: 940px) {
-    .menuBox {
-        display: flex;
-    }
-}
 .menuButtonImage {
     width: 101%;
     height: 101%;

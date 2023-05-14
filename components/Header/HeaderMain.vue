@@ -4,9 +4,6 @@
         <slot/>
 
         <HeaderPileje />
-
-        
-
     </header>
 </template>
 

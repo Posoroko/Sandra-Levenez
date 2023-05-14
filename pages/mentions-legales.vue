@@ -2,6 +2,13 @@
     <main class="mainMentions">
             
             <div class="mainWidth marTop50 flex column gap30">
+                <div class="flex column gap10 w50">
+                    <h2 class="bodyTitle">Mentions légales</h2>
+                    <div class="scratchBox">
+                        <DecorScratch />
+                    </div>
+                </div>
+
                 <h2>Ce site internet est la propriété de M.I.L.E.S. Performance : </h2>
             
                 <address>

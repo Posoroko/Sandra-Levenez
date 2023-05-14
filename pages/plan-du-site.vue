@@ -1,8 +1,15 @@
 <template>
     <main class="planMain mainWidth ">
-        <h1>Plan du site</h1>
+        
         <div class="mainWidth marTop50">
-            <ul class="levelZero flex column gap20 ">
+            <div class="flex column gap10 w50">
+                <h2 class="bodyTitle">Plan du site</h2>
+                <div class="scratchBox r">
+                    <DecorScratch />
+                </div>
+            </div>
+
+            <ul class="levelZero flex column gap20 marTop50">
                 <li class="levelOne flex alignCenter gap10">
                     <span class="icon">circle</span>
                     <NuxtLink class="levelOneTitle" to="/">Accueil</NuxtLink>

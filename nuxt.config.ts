@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         public: {
             siteUrl: 'https://sandralevenez.netlify.app',
             siteName: 'Sandra Levenez, coach sportif et conférencière',
-            siteDescription: 'Site de Sandra Levenez, coaching et conférences',
+            siteDescription: 'Site de Sandra Levenez, sportive de haut-niveau, offre un service de coaching sportif et anime des conférences.',
             language: 'fr-FR',
         }
     },

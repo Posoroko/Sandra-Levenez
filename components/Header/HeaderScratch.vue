@@ -70,7 +70,9 @@
         </g>
         </svg>
 
-        <HeaderMenuMain />
+        <div class="scratchMenuBox">
+            <HeaderMenuMain />
+        </div>
     </div>
 
 
@@ -90,4 +92,14 @@
 .st1 {
     fill: var(--brand-main);
 }
+@media (max-width: 939px) {
+    .scratchMenuBox {
+        display: none;
+    }
+}
+@media (min-width: 940px) {
+    .scratchMenuBox {
+        display: block;
+    }
+}  
 </style>

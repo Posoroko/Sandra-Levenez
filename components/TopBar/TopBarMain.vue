@@ -26,7 +26,7 @@
 <style scoped>
 .topBarContainer {
     height: clamp(80px, 10vw, 150px);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .logoCardPlaceHolder {
     height: clamp(80px, 10vw, 150px);
