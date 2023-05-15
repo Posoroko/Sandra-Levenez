@@ -13,6 +13,7 @@ a {
     /* padding: 0 30px; */
     margin: auto;
 }
+
 .mediumWidth {
     width: min(calc(var(--mainWidth) * var(--medium-width-coef)), 100%);
 }
@@ -27,7 +28,7 @@ a {
 
     --large-header: 100vh;
     --medium-header-coef: 0.75;
-    --small-header-coef: 0.5;
+    --small-header-coef: 0.40;
 
     --section100vh: 100vh;
     --medium-section-coef: 0.75;

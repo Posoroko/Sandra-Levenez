@@ -1,11 +1,14 @@
 <template>
         <HeaderMain>
             <div class="full">
-                <img class="objectFitCover" :src="pageContent.headerImage" alt="">
+                <img v-if="route.path != '/'" class="headerimage objectFitCover" :src="pageContent.headerImage" alt="">
+                <div v-else>
+                    <HeaderHome />
+                </div>
             </div>
         </HeaderMain>
 
-        <main>
+        <main class="pageMain">
             <SectionMain>
                 <template v-slot:leftBox>
                     <SectionTextBox :content="pageContent.sectionPhoto" />
@@ -48,6 +51,10 @@
 </template>
 
 <script setup>
+const route = useRoute()
+console.log(route.path)
+
+
 const props = defineProps({
     pageContent: {
         type: Object,
@@ -55,3 +62,17 @@ const props = defineProps({
     }
 })
 </script>
+
+<style scoped>
+@media (max-width: 850px) {
+    .headerimage {
+        object-position: -275px;
+    }
+}
+@media (min-width: 850px) {
+    .headerimage {
+        object-position: left;
+    }
+}
+
+</style>

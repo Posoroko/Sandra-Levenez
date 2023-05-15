@@ -108,7 +108,7 @@ export const socialMedia = [
 ]
 
 export const palmares = {
-    headerImage: "/images/headers/header-accueil.png",
+    headerImage: "/images/headers/header-palmares.png",
     sectionLogo: {
         title: "Mon palmares", 
         subtitle:'Athlétisme/Cross country',
@@ -128,17 +128,17 @@ export const palmares = {
         title: null,
         subtitle: 'Duathlon',
         list: [
-                '2 fois championne du monde(2014, 2019)',
-                '2 fois championne du monde Relais(2011, 2014)',
-                '4 fois championne d’europe(2011, 2015, 2017, 2018)',
-                '2 fois championne d’europe de Relais(2008, 2009)',
-                '3 fois 2ème championnat du monde(2009, 2010, 2013)',
-                '3 fois 3ème championnat du monde(2011, 2012, 2015)',
-                '9 fois championne de France(2007, 2010, 2011, 2012, 2013, 2014, 2015 2018 et 2019)'
+                '2 fois championne du monde (2014, 2019)',
+                '2 fois championne du monde Relais (2011, 2014)',
+                '4 fois championne d’europe (2011, 2015, 2017, 2018)',
+                '2 fois championne d’europe de Relais (2008, 2009)',
+                '3 fois 2ème championnat du monde (2009, 2010, 2013)',
+                '3 fois 3ème championnat du monde (2011, 2012, 2015)',
+                '9 fois championne de France (2007, 2010, 2011, 2012, 2013, 2014, 2015 2018 et 2019)'
         ],
         image: {
-            url_Small: "/images/conference.jpg",
-            url_Large: "/images/conference.jpg",
+            url_Small: "/images/arrivee.jpg",
+            url_Large: "/images/arrivee.jpg",
             imageAlt: "Sandra Levenez à l'arrivée d'une course",
         },
         button: false,
@@ -146,17 +146,17 @@ export const palmares = {
     },
     sectionPhoto2: {
         title: null,
-        subtitle: 'Cycliste Pro (Arkéa : 2020 & 2021; Cofidis: 2022) ',
+        subtitle: 'Cycliste Pro (Arkéa : 2020 & 2021; Cofidis : 2022) ',
         list: [
-            '4ème France CLM(2020)',
-            '2ème Périgord Ladies(2020)',
-            '5ème Tour de l’Ardèche(2020)',
-            '27ème championnat du monde à Imola(2020)',
-            '20ème La Flèche Wallonne(2022)',
+            '4ème France CLM (2020)',
+            '2ème Périgord Ladies (2020)',
+            '5ème Tour de l’Ardèche (2020)',
+            '27ème championnat du monde à Imola (2020)',
+            '20ème La Flèche Wallonne (2022)',
         ],
         image: {
-            url_Small: "/images/conference.jpg",
-            url_Large: "/images/conference.jpg",
+            url_Small: "/images/velo-01.jpg",
+            url_Large: "/images/velo-01.jpg",
             imageAlt: "Sandra Levenez à l'arrivée d'une course",
         },
         button: false,

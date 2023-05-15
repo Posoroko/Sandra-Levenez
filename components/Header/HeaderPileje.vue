@@ -7,15 +7,25 @@
 
 <style scoped>
 .pilejeBox {
-    width: 250px;
+    width: min(250px, 40vw);
     position: absolute;
     right: 20px;
     bottom: 100px;
+    background-color: #0000001c;
+    border-radius: 10px;
+    padding: 10px;
 }
 .pilejeBox p {
     font-weight: 600;
 }
-.pilejePNG {
-    width: 60%;
+@media (max-width: 554px) {
+    .pilejePNG {
+        width: 100%;
+    }
+}
+@media (min-width: 555px) {
+    .pilejePNG {
+        width: 60%;
+    }
 }
 </style>

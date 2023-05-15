@@ -275,7 +275,7 @@
 
 <style scoped>
 .logoFullSVG {
-    width: 300px;
+    width: min(300px, 100%);
 }
 .st0 {
     fill: #FFFFFF;

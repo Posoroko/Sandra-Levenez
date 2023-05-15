@@ -5,7 +5,7 @@
         </div>
     </HeaderMain>
 
-    <main class="pad10" id="bookMain">
+    <main class="pad20" id="bookMain">
         <div class="mainWidth">
             <div class="">
                 <h1 class="bodyTitle">Livre d'or</h1>
@@ -16,7 +16,7 @@
     
             <section class="marTop50" v-for="(array, indexArray) in messages" :key="indexArray">
                 <div class="mainWidth flex gap30 wrap justifyCenter cardContainer">
-                    <article class="bookCard relative flex column justifyBetween gap25" v-for="(message, indexMessage) in array" :key="message.id">
+                    <article class="bookCard relative flex column gap25" v-for="(message, indexMessage) in array" :key="message.id">
                         <div class="flex column">
                             <div class="flex column gap10">
                                 <h3 class="bookCardTitle">{{ message.firstName }}</h3>
@@ -125,10 +125,11 @@ const { data: messages } = await useAsyncData(
 }
 .bookCardTextBox {
     width: 100%;
-    height: 350px;
+    height: min(350px, 25vw);
     border-radius: 10px;
     /* overflow: hidden; */
 }
+
 .dots, .bookCardTextBox:deep(*) {
     color: white;
     font-size: clamp(14px, 2vw, 16px);

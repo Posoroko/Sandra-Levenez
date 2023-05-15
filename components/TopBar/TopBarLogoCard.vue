@@ -1,5 +1,5 @@
 <template>
-    <svg version="1.1" class="h100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" class="logoCardSVG h100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 398 201.5" style="enable-background:new 0 0 398 201.5;" xml:space="preserve">
 
     <g>
@@ -285,6 +285,9 @@
 </template>
 
 <style scoped>
+.logoCardSVG {
+    overflow: visible;
+}
 .st0{
     fill:#FFFFFF;
     filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));

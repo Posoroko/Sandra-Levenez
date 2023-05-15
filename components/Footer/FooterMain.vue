@@ -3,7 +3,7 @@
 
         <div class="mainWidth pad20">
             <address class="contactCard">
-                <div class="logoBox">
+                <div class="logoBox centered">
                     <DecorLogoFull />
                 </div>
             
@@ -38,7 +38,7 @@
             </address>
         </div>
 
-        <nav class="bottomBar w100 marTop100">
+        <nav class="bottomBar w100 flex alignCenter marTop100">
             <ul class="mainWidth flex gap10 justifyAround wrap">
                 <li class="linkText"><NuxtLink to="/">ACCUEIL</NuxtLink></li>
                     <div class="bottomBarScratchBox"> <DecorSmallScratch /> </div>
@@ -93,6 +93,7 @@ import { socialMedia } from '@/assets/content/content'
     color: var(--brand-sec);
 }
 .bottomBar {
+    min-height: 50px;
     background-color: var(--brand-sec);
     padding: 0 20px;
 }
@@ -109,30 +110,27 @@ import { socialMedia } from '@/assets/content/content'
 .linkText a {
     color: white;
 }
-@media (max-width: 809px) {
+
+@media (max-width: 639px) {
     .contactCard {
+        width: 100%;
+        margin: auto;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .scratchBox {
-        transform: rotate(90deg);
-        width: 75vw;
-    }
-    .socialBox:deep(.contactCardIconbox) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 20px;
-    }
 }
-@media (min-width: 810px) and (max-width: 999px) {
+
+
+@media (min-width: 640px) and (max-width: 999px) {
     .contactCard {
+        width: 80%;
+        margin: auto;
         justify-content: space-between;
-    }
-    .scratchBox2 {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
     .socialBox {
         width: 100%;
@@ -142,6 +140,22 @@ import { socialMedia } from '@/assets/content/content'
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+}
+@media (max-width: 999px) {
+    .logoBox {
+        width: 100%;
+    }
+    .scratchBox {
+        display: block;
+        transform: rotate(90deg);
+        width: 75vw;
+    }
+    .socialBox:deep(.contactCardIconbox) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
     }
 }
 @media (min-width: 1000px) {
@@ -169,27 +183,37 @@ import { socialMedia } from '@/assets/content/content'
     transform: translate(-50%, -50%);
 }
 
+/* contact scratch format */
 
-@media (max-width: 809px) {
+@media (max-width: 999px) {
 
     .contactCardScratchBox {
         height: 20px;
         width: 100%;
-        /* align-self: stretch; */
+        
     }
     .contactCardScratchBox:deep(.thinScratchSVG) {
-        height: 60vw;
+        height: 35vw;
         transform: translate(-50%, -50%) rotate(90deg);
     }
 
 }
-@media (min-width: 810px) {
+@media (min-width: 1000px) {
     .contactCardScratchBox {
-        width: 20px;
-        align-self: stretch;
+        display: block;
+        /* width: 20px;
+        align-self: stretch; */
     }
     .contactCardScratchBox:deep(.thinScratchSVG) {
         height: 100%;
     }
 }
+@media (max-width: 999px) {
+
+    .bottomBarScratchBox {
+        display: none;
+    }
+
+}
+
 </style>

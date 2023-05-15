@@ -1,4 +1,8 @@
 <template>
+    <header class="smallHeader HeaderSmallHeight relative">
+        <HeaderScratch />
+    </header>
+
     <main class="mainMentions">
             
             <div class="mainWidth marTop50 flex column gap30">
@@ -16,7 +20,7 @@
                     20, mail Gaston Bardet<br>
                     35560 Le Rheu<br>
                     06 07 08 27 46<br>
-                    sandra.levenez@orange.f r<br>
+                    sandra.levenez@orange.fr<br>
                 </address>
 
                 <p> <b>Directeur de publication :</b> Sandra LEVENEZ.</p>
@@ -29,21 +33,21 @@
                     74, allée des peupliers – 29270 Carhaix​<br>
                     06 72 77 44 83 <br>
                     julie@comkreiz.com <br>
-                    <a href="https://www.comkreiz.com/">www.comkreiz.com</a><br>
+                    <a class="underline" href="https://www.comkreiz.com/">https://www.comkreiz.com/</a><br>
                 </address>
 
-                <h2>Développeur web et hébergeur </h2>
+                <h3>Développeur web et hébergeur </h3>
                 <address>
                     Studio Posoroko<br>
                     24, rue de Kerven – 29270 Carhaix​<br>
                     06 95 07 12 64<br>
                     eric@posoroko.com<br>
-                    <a href="https://www.posoroko.com">www.posoroko.com</a><br>
+                    <a class="underline" href="https://www.posoroko.com">https://www.posoroko.com</a><br>
                 </address>
 
                 <h2>DROITS DE REPRODUCTION </h2>
                 <p>
-                    Ce site est protégé par la législation f rançaise et internationale par le droit d’auteur et la propriété intellectuelle. Toute copie, représentation,
+                    Ce site est protégé par la législation française et internationale par le droit d’auteur et la propriété intellectuelle. Toute copie, représentation,
                     adaptation, diffusion, intégrale ou partielle, du contenu du site est illicite à l’exception d’une unique copie réservée à l’usage privé de
                     l’utilisateur. Les informations contenues dans ce site sont présentées à titre purement informatif et sont non contractuelles. M.I.L.E.S.
                     Performance ne saurait être tenue responsable pour toute erreur ou omission dans les textes et illustrations du site. Toute représentation et/
@@ -55,9 +59,9 @@
                 <h2>PROTECTION DES DONNÉES PERSONNELLES </h2>
                 <p>
                     Conformément au Règlement (UE) 2016/679 relatif à la protection des données à caractère personnel et à la loi n°78/17 du 6 janvier 1978
-                    modifiée, vous disposez des droits suivants sur vos données personnelles, et notamment : le droit d’accéder, et de faire rectif ier vos données,
+                    modifiée, vous disposez des droits suivants sur vos données personnelles, et notamment : le droit d’accéder, et de faire rectifier vos données,
                     le droit à l’effacement, à la limitation du traitement, et le droit de vous opposer à tout moment au traitement de vos données pour des motifs
-                    tenant à votre situation particulière. Pour exercer vos droits, merci d’adresser votre demande à : sandra.levenez@orange.f r
+                    tenant à votre situation particulière. Pour exercer vos droits, merci d’adresser votre demande à : sandra.levenez@orange.fr
                 </p>
 
                 <h2>ABSENCE DE GARANTIE</h2> 
@@ -70,7 +74,7 @@
                 <p>
                     Certaines pages peuvent contenir des liens vers des sites externes à ce site. M.I.L.E.S. Performance ne réalise pas de contrôle sur ces sites,
                     par conséquent, elle n’assume aucune responsabilité quant à la disponibilité de ces sites, leurs contenus, publicités, produits ou services
-                    disponibles à partir de ces sites. L’accès à d’autres sites externes au site https://www.milesperformance.f r se fait donc sous l’entière
+                    disponibles à partir de ces sites. L’accès à d’autres sites externes au site https://www.milesperformance.fr se fait donc sous l’entière
                     responsabilité de l’utilisateur qui les consulte.
                 </p>
             </div>
@@ -78,6 +82,11 @@
 </template>
 
 <style scoped>
+@media (max-width: 940px) {
+    .smallHeader {
+        display: none;
+    }
+}
 .mainMentions {
 
     margin-top: 25vh;

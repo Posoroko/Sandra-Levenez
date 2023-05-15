@@ -1,6 +1,6 @@
 <template>
-    <div class="textBox full flex column  justifyCenter gap50 pad20">
-        <div class="flex column gap10">
+    <div class="textBox full flex column  justifyCenter gap30 pad20">
+        <div class="flex column ">
             <h2 class="bodyTitle" v-html="content.title"></h2>
             <div class="scratchBox">
                 <DecorScratch />

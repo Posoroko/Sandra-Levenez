@@ -1,15 +1,20 @@
 <template>
-    <div class="flex column gap20">
-        <h1 class="bodyTitle" v-if="content.title">
-            {{ content.title }}
-        </h1>
+    <div class="textBox full flex column  justifyCenter gap30 pad20">
+        <div class="flex column" v-if="content.title">
+            <h2 class="bodyTitle">
+                {{ content.title }}
+            </h2>
+            <div class="scratchBox">
+                <DecorScratch />
+            </div>
+        </div>
         <h3 class="bodySubtitle">
             {{ content.subtitle }}
         </h3>
         <ul class="palmaresList flex column gap10">
             <li class="bodyText palmaresListItem flex alignCenter" v-for="(item, index) in content.list" :key="index">
                 <p>
-                    {{ item }}
+                    &nbsp{{ item }}
                 </p>
             </li>
         </ul>
@@ -26,9 +31,6 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.palmaresList {
-    
-}
 
 .palmaresListItem::before {
     width: 10px;

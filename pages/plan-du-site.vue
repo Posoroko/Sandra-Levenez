@@ -1,40 +1,47 @@
 <template>
-    <main class="planMain mainWidth ">
+    <header class="smallHeader HeaderSmallHeight relative">
+        <HeaderScratch />
+    </header>
+
+    <main class="planMain mainWidth pad20">
         
         <div class="mainWidth marTop50">
             <div class="flex column gap10 w50">
-                <h2 class="bodyTitle">Plan du site</h2>
-                <div class="scratchBox r">
+                <h2 class="bodySubitle">Plan du site</h2>
+                <!-- <div class="scratchBox">
                     <DecorScratch />
-                </div>
+                </div> -->
             </div>
 
-            <ul class="levelZero flex column gap20 marTop50">
+            <ul class="levelZero flex column marTop20">
                 <li class="levelOne flex alignCenter gap10">
-                    <span class="icon">circle</span>
-                    <NuxtLink class="levelOneTitle" to="/">Accueil</NuxtLink>
+                    <!-- <span class="icon">circle</span> -->
+                    <NuxtLink class="levelOneTitle bodyText1" to="/">Accueil</NuxtLink>
                 </li>
 
                 <li class="levelTwo flex alignCenter gap10">
                     <span class="icon">circle</span>
-                    <NuxtLink class="levelOneTitle" to="/mon-palmares">Mon Palmarès</NuxtLink>
+                    <NuxtLink class="levelOneTitle bodyText1" to="/mon-palmares">Mon Palmarès</NuxtLink>
                 </li>
 
                 <li class="levelOne flex alignCenter gap10">
-                    <span class="icon">circle</span>
-                <NuxtLink class="levelOneTitle" to="/coaching">Coaching</NuxtLink>
+                    <!-- <span class="icon">circle</span> -->
+                <NuxtLink class="levelOneTitle bodyText1" to="/coaching">Coaching</NuxtLink>
             </li>
 
                 <li class="levelOne flex alignCenter gap10">
-                    <span class="icon">circle</span>
-                    <NuxtLink class="levelOneTitle" to="/conferences">Conférences</NuxtLink>
+                    <!-- <span class="icon">circle</span> -->
+                    <NuxtLink class="levelOneTitle bodyText1" to="/conferences">Conférences</NuxtLink>
                 </li>
 
-                
+                <li class="levelOne flex alignCenter gap10">
+                    <!-- <span class="icon">circle</span> -->
+                    <NuxtLink class="levelOneTitle bodyText1" to="/livre-d-or">Livre d'or</NuxtLink>
+                </li>
 
                 <li class="levelOne flex alignCenter gap10">
-                    <span class="icon">circle</span>
-                    <NuxtLink class="levelOneTitle" to="/livre-d-or">Livre d'or</NuxtLink>
+                    <!-- <span class="icon">circle</span> -->
+                    <NuxtLink class="levelOneTitle bodyText1" to="/mentions-legales">Mentions légales</NuxtLink>
                 </li>
 
                 
@@ -47,13 +54,18 @@
 </script>
 
 <style scoped>
+@media (max-width: 940px) {
+    .smallHeader {
+        display: none;
+    }
+}
 .planMain {
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 .icon {
-    font-size: 12px;
-    color: var(--brand-sec);
+    font-size: 8px;
+    /* color: var(--brand-sec); */
 }
 
 
@@ -63,18 +75,18 @@
 }
 
 .levelOne {
-    font-size: 20px;
+
     padding-left: 40px;
+    margin-top: 20px;
     list-style: disc;
 }
 
-.levelOneTitle {
-    font-weight: 600;
-}
+
 
 .levelTwo {
-    font-size: 16px;
+
     padding-left: 60px;
+    margin-top: 10px;
 }
 
 </style>

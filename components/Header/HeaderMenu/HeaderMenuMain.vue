@@ -32,28 +32,7 @@ const emits = defineEmits(['closeMenu'])
     justify-content: center;
     
 }
-@media (max-width: 939px) {
-    .menuBox {
-        flex-direction: column;
-        align-items: center;
-    }
-    .menuButton {
-        width: 100%;
-        height: 100px;
-    }
-}
-@media (min-width: 940px) {
-    .menuBox {
-        flex-direction: row;
-        position: absolute;
-        bottom: 50%;
-        left: 0%;
-        transform: translateY(50%);
-    }
-    .menuButton {
-        width: max(180px, 12vw);
-    }
-}
+
 .menuButton {
     
     aspect-ratio: 1/1;
@@ -65,12 +44,6 @@ const emits = defineEmits(['closeMenu'])
     box-shadow: 5px 5px 10px black;
 }
 
-.menuButton2 {
-    transform: translateX(-2px);
-}
-.menuButton3 {
-    transform: translateX(-4px);
-}
 
 .menuButtonImage {
     width: 101%;
@@ -107,5 +80,40 @@ const emits = defineEmits(['closeMenu'])
 .menuButton:hover .cover{
     opacity: 1;
     transition: 300ms ease;
+}
+
+@media (max-width: 939px) {
+    .menuBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuButton {
+        width: 100%;
+        height: 100px;
+    }
+    .menuButton2 {
+    transform: translateY(-2px);
+    }
+    .menuButton3 {
+        transform: translateY(-4px);
+    }
+}
+@media (min-width: 940px) {
+    .menuBox {
+        flex-direction: row;
+        position: absolute;
+        bottom: 50%;
+        left: 0%;
+        transform: translateY(50%);
+    }
+    .menuButton {
+        width: max(180px, 12vw);
+    }
+    .menuButton2 {
+        transform: translateX(-2px);
+    }   
+    .menuButton3 {
+        transform: translateX(-4px);
+    }
 }
 </style>
