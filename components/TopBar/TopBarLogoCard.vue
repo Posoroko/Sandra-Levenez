@@ -4,11 +4,8 @@
 
     <g>
     	<g>
-		
-    			<image style="overflow:visible;opacity:0.75;" width="1701" height="799"  transform="matrix(0.24 0 0 0.24 -8.1621 11.96)">
-    		</image>
     		<g>
-    			<polygon class="st0" points="378,20.5 216.9,181.6 0,181.1 0,20 			"/>
+    			<polygon class="st0" points="378,20.5 216.9,181.6 0,181.1 0,20"/>
     		</g>
     	</g>
     	<g>
@@ -290,6 +287,10 @@
 }
 .st0{
     fill:#FFFFFF;
+    filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));
+}
+.st0:hover{
+    fill:red;
     filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));
 }
 .st1{clip-path:url(#SVGID_00000112604517635398769660000013300753817649142449_);}

@@ -34,7 +34,7 @@
                     74, allée des peupliers – 29270 Carhaix​<br>
                     06 72 77 44 83 <br>
                     julie@comkreiz.com <br>
-                    <a class="underline" href="https://www.comkreiz.com/">https://www.comkreiz.com/</a><br>
+                    <a class="underline" href="https://www.comkreiz.com/" target="_blank">https://www.comkreiz.com/</a><br>
                 </address>
 
                 <h3>Développeur web et hébergeur </h3>
@@ -43,7 +43,7 @@
                     24, rue de Kerven – 29270 Carhaix​<br>
                     06 95 07 12 64<br>
                     eric@posoroko.com<br>
-                    <a class="underline" href="https://www.posoroko.com">https://www.posoroko.com</a><br>
+                    <a class="underline" href="https://www.posoroko.com" target="_blank">https://www.posoroko.com</a><br>
                 </address>
 
                 <h2>DROITS DE REPRODUCTION </h2>

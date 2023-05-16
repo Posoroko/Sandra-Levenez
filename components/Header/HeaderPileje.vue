@@ -10,7 +10,7 @@
     width: min(250px, 40vw);
     position: absolute;
     right: 20px;
-    bottom: max(100px, 18vh);
+    bottom: max(50px, 15vh);
     background-color: #0000001c;
     border-radius: 10px;
     padding: 10px;

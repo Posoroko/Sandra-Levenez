@@ -59,7 +59,7 @@ export const coaching = {
     sectionLogo: {
         title: "Coaching au juste prix",
         subtitle: "Particulier, Club, Entreprise",
-        text: "Afin de vous proposer une prestation cohérente en terme de tarifs, il me semble logique et indispensable d’échanger avec vous. <br><br>A l’issue de cet échange, je serai alors en mesure de vous faire une proposition de tarif. <br><br>Possibilité de déplacement.",
+        text: "Afin de vous proposer une prestation cohérente en terme de tarifs, il me semble logique et indispensable d’échanger avec vous. <br><br>A l’issue de cet échange, je serai alors en mesure de vous faire une proposition de tarif. <br><br> <b class='italic'> Possibilité de déplacement. </b>",
         logo: false
     }
 }
@@ -69,7 +69,7 @@ export const conferences = {
     sectionPhoto: {
         title: "Conférences",
         subtitle: 'Modalités',
-        text: "A travers la demande de prestation que vous me formulerez, j’élaborerai mon intervention auprès de vos équipes, à l’interface des compétences développées dans le sport de haut-niveau et des compétences propres à votre secteur d’activité en rapport aux exigences économiques et humaines qui sont les vôtres.<br><br>  Pour cela, je m’appuierai entre autre sur des exemples concrets qui permettront d’illustrer la similitude de nos terrains de jeux respectifs et de vous engager sur des <span class='highlighted'> leviers motivationnels inspirants. </span> <br> <br> <b> Me contacter pour échanges et analyses précises de vos besoins. </b> ",
+        text: "A travers la demande de prestation que vous me formulerez, j’élaborerai mon intervention auprès de vos équipes, à l’interface des compétences développées dans le sport de haut-niveau et des compétences propres à votre secteur d’activité en rapport aux exigences économiques et humaines qui sont les vôtres.<br><br>  Pour cela, je m’appuierai entre autre sur des exemples concrets qui permettront d’illustrer la similitude de nos terrains de jeux respectifs et de vous engager sur des <span class='highlighted'> leviers motivationnels inspirants. </span> <br> <br> <b class='italic'> Me contacter pour échanges et analyses précises de vos besoins. </b> ",
         image: {
             url_Small: "/images/conference.jpg",
             url_Large: "/images/conference.jpg",
