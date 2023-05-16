@@ -11,7 +11,7 @@
                     <DecorSmallScratchThin /> 
                 </div>
             
-                <div class="contactBox flex column justifyCenter alignStart gap20">
+                <div class="contactBox flex column justifyCenter alignStart gap30">
                     <a :href="`tel:${contact.telephone}`" class="contactBoxLine flex alignCenter gap10">
                         <span class="contactCard_icon icon callIcon">call</span>
                         <span class="contactCard_text reactiveLink">{{ contact.telephone }}</span>
@@ -159,9 +159,15 @@ import { socialMedia } from '@/assets/content/content'
     }
 }
 @media (min-width: 1000px) {
+    .logoBox {
+        margin-right: 25px;
+    }
     .contactCard {
         
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    .socialBox {
+        margin-left: 25px;
     }
     .socialBox:deep(.contactCardIconbox) {
         height: 100%;

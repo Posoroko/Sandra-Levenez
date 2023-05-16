@@ -13,9 +13,9 @@
         </h3>
         <ul class="palmaresList flex column gap10">
             <li class="bodyText palmaresListItem flex alignCenter" v-for="(item, index) in content.list" :key="index">
-                <p>
-                    &nbsp{{ item }}
-                </p>
+
+                {{ item }}
+
             </li>
         </ul>
     </div>
@@ -31,9 +31,12 @@ const props = defineProps({
 </script>
 
 <style scoped>
-
+.palmaresListItem {
+    text-align: left;
+}
 .palmaresListItem::before {
-    width: 10px;
+    width: 20px;
+    height: 100%;
     content: "\2022";
     font-weight: 900;
     display: inline-block;

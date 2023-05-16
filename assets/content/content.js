@@ -59,7 +59,7 @@ export const coaching = {
     sectionLogo: {
         title: "Coaching au juste prix",
         subtitle: "Particulier, Club, Entreprise",
-        text: "Afin de vous proposer une prestation cohérente en terme de tarifs, il me semble logique et indispensable d’échanger avec vous. <br><br>A l’issue de cet échange, je serai alors en mesure de vous faire une proposition de tarif. <br><br>Athlète, Particulier, Club, Entreprise : individuel ou groupe, déplacements sur demande.",
+        text: "Afin de vous proposer une prestation cohérente en terme de tarifs, il me semble logique et indispensable d’échanger avec vous. <br><br>A l’issue de cet échange, je serai alors en mesure de vous faire une proposition de tarif. <br><br>Possibilité de déplacement.",
         logo: false
     }
 }
@@ -69,7 +69,7 @@ export const conferences = {
     sectionPhoto: {
         title: "Conférences",
         subtitle: 'Modalités',
-        text: "A travers la demande de prestation que vous me formulerez, j’élaborerai mon intervention auprès de vos équipes, à l’interface des compétences développées dans le sport de haut-niveau et des compétences propres à votre secteur d’activité en rapport aux exigences économiques et humaines qui sont les vôtres.<br><br>  Pour cela, je m’appuierai entre autre sur des exemples concrets qui permettront d’illustrer la similitude de nos terrains de jeux respectifs et de vous engager sur des <span class='highlighted'> leviers motivationnels inspirants. </span>",
+        text: "A travers la demande de prestation que vous me formulerez, j’élaborerai mon intervention auprès de vos équipes, à l’interface des compétences développées dans le sport de haut-niveau et des compétences propres à votre secteur d’activité en rapport aux exigences économiques et humaines qui sont les vôtres.<br><br>  Pour cela, je m’appuierai entre autre sur des exemples concrets qui permettront d’illustrer la similitude de nos terrains de jeux respectifs et de vous engager sur des <span class='highlighted'> leviers motivationnels inspirants. </span> <br> <br> <b> Me contacter pour échanges et analyses précises de vos besoins. </b> ",
         image: {
             url_Small: "/images/conference.jpg",
             url_Large: "/images/conference.jpg",
@@ -81,7 +81,7 @@ export const conferences = {
         quote: "logo",
         title: "Conférences : pourquoi ?",
         subtitle: "Des problématiques à partager, à questionner, à utiliser et valoriser",
-        text: "Mon expérience de la performance s’inscrit sur 24 années de pratiques sportives exercées à haut-niveau avec la particularité d’avoir évolué au sein de 3 fédérations différentes (athlétisme, triathlon/duathlon, et cyclisme), et toujours cette recherche de <span class='highlighted'> l’excellence pour dénominateur commun. </span><br><br>  Réfléchir, analyser, mettre en relation, planifier, s’entraîner, réguler, s’adapter, négocier, et autant de compétences que je veux partager et mettre en perspective pour favoriser un<span class= 'highlighted' > climat motivationnel de performance, d’engagement, de persévérance, de cohésion. </span> <br><br> Me contacter pour échanges et analyses précises de vos besoins.",
+        text: "Mon expérience de la performance s’inscrit sur 24 années de pratiques sportives exercées à haut-niveau avec la particularité d’avoir évolué au sein de 3 fédérations différentes (athlétisme, triathlon/duathlon, et cyclisme), et toujours cette recherche de <span class='highlighted'> l’excellence pour dénominateur commun. </span><br><br>  Réfléchir, analyser, mettre en relation, planifier, s’entraîner, réguler, s’adapter, négocier, et autant de compétences que je veux partager et mettre en perspective pour favoriser un<span class= 'highlighted' > climat motivationnel de performance, d’engagement, de persévérance, de cohésion. </span>",
         logo: false
 
     },
@@ -110,7 +110,7 @@ export const socialMedia = [
 export const palmares = {
     headerImage: "/images/headers/header-palmares.jpg",
     sectionLogo: {
-        title: "Mon palmares", 
+        title: "Mon palmarès", 
         subtitle:'Athlétisme/Cross country',
         list: [
             'Championne de France de cross Junior 1997',
@@ -134,7 +134,7 @@ export const palmares = {
                 '2 fois championne d’europe de Relais (2008, 2009)',
                 '3 fois 2ème championnat du monde (2009, 2010, 2013)',
                 '3 fois 3ème championnat du monde (2011, 2012, 2015)',
-                '9 fois championne de France (2007, 2010, 2011, 2012, 2013, 2014, 2015 2018 et 2019)'
+                '9 fois championne de France (2007, 2010, 2011, 2012, 2013, 2014, 2015, 2018 et 2019)'
         ],
         image: {
             url_Small: "/images/arrivee.jpg",
