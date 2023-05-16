@@ -1,5 +1,5 @@
 <template>
-    <div class="topBarContainer relative flex alignCenter">
+    <div class="topBarContainer relative flex alignCenter marTop20">
         
         <div class="topBar_bar w100 flex justifyBetween">
             <div class="logoCardPlaceHolder"></div>
