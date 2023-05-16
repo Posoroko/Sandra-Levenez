@@ -21,7 +21,6 @@ const props = defineProps({
     width: clamp(40px, 4vw, 55px);
     aspect-ratio: 1/1;
 }
-.contactCardIconbox:deep(.iconPath) {
-    fill: var(--brand-sec);
-}
+
+
 </style>

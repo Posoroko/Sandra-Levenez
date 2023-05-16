@@ -1,61 +1,63 @@
 <template>
-    <HeaderMain>
-        <div class="full">
-            <img class="objectFitCover" src="/images/headers/header-livre.png" alt="">
-        </div>
-    </HeaderMain>
-
-    <main class="pad20" id="bookMain">
-        <div class="mainWidth">
-            <div class="">
-                <h1 class="bodyTitle">Livre d'or</h1>
-                <div class="bookScratchBox">
-                    <DecorScratch />
-                </div>
+    <div>
+        <HeaderMain>
+            <div class="full">
+                <img class="objectFitCover" src="/images/headers/header-livre.jpg" alt="">
             </div>
-    
-            <section class="marTop50" v-for="(array, indexArray) in messages" :key="indexArray">
-                <div class="mainWidth flex gap30 wrap justifyCenter cardContainer">
-                    <article class="bookCard relative flex column gap25" v-for="(message, indexMessage) in array" :key="message.id">
-                        <div class="flex column">
-                            <div class="flex column gap10">
-                                <h3 class="bookCardTitle">{{ message.firstName }}</h3>
-                                <p class="flex justifyCenter">
-                                    <span class="icon bookStar" v-for="indexMessage in 5" :key="indexMessage">star</span>
-                                </p>
-                            </div>
-                            <div class="bookCardTextBox marTop20">
-                                <div class="text flex column gap10" v-html="`${message.message}`">
+        </HeaderMain>
 
-                                </div>
-                                
-                                <!-- <span class="dots" v-if="message.message.length > cardPreviewLength">...</span> -->
-                            </div> 
-                        </div>
-                        <div class="buttonBox centered">
-                            <button class="pageButton flex slignCenter gap10 pointer" 
-                                :data-indexArray="indexArray"
-                                :data-indexMesage="indexMessage"
-                                :data-firstName="message.firstName"
-                                
-                                @click.prevent="handleClick" 
-                                v-if="message.message.length > cardPreviewLength">
-                                
-                                <div class="buttonLogoBox">
-                                    <DecorLogoFill />
-                                </div>
-                                
-                                <span class="buttonText centered">Lire la suite</span>
-                            </button>
-                        </div>
-                    </article>
+        <main class="pad20" id="bookMain">
+            <div class="mainWidth">
+                <div class="">
+                    <h1 class="bodyTitle">Livre d'or</h1>
+                    <div class="bookScratchBox">
+                        <DecorScratch />
+                    </div>
                 </div>
-                <div class="milesBox" v-if="indexArray == 0">
-                    <DecorMiles />
-                </div>
-            </section>
-        </div>
-    </main>
+    
+                <section class="marTop50" v-for="(array, indexArray) in messages" :key="indexArray">
+                    <div class="mainWidth flex gap30 wrap justifyCenter cardContainer">
+                        <article class="bookCard relative flex column gap25" v-for="(message, indexMessage) in array" :key="message.id">
+                            <div class="flex column">
+                                <div class="flex column gap10">
+                                    <h3 class="bookCardTitle">{{ message.firstName }}</h3>
+                                    <p class="flex justifyCenter">
+                                        <span class="icon bookStar" v-for="indexMessage in 5" :key="indexMessage">star</span>
+                                    </p>
+                                </div>
+                                <div class="bookCardTextBox marTop20">
+                                    <div class="text flex column gap10" v-html="`${message.message}`">
+
+                                    </div>
+                                
+                                    <!-- <span class="dots" v-if="message.message.length > cardPreviewLength">...</span> -->
+                                </div> 
+                            </div>
+                            <div class="buttonBox centered">
+                                <button class="pageButton flex slignCenter gap10 pointer" 
+                                    :data-indexArray="indexArray"
+                                    :data-indexMesage="indexMessage"
+                                    :data-firstName="message.firstName"
+                                
+                                    @click.prevent="handleClick" 
+                                    v-if="message.message.length > cardPreviewLength">
+                                
+                                    <div class="buttonLogoBox">
+                                        <DecorLogoFill />
+                                    </div>
+                                
+                                    <span class="buttonText centered">Lire la suite</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="milesBox" v-if="indexArray == 0">
+                        <DecorMiles />
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
 </template>
 
 <script setup>
@@ -97,7 +99,7 @@ const handleClick = (e) => {
 const { data: messages } = await useAsyncData(
     "book",
     async () => {
-        const items = await $fetch(`${directusItems}Sandra_Levenez_book`) 
+        const items = await $fetch(`${directusItems}Sandra_Levenez_book?sort[]=-date_published`) 
         const temp = [
             items.data.splice(0, 3), items.data
         ]

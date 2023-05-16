@@ -1,53 +1,56 @@
 <template>
-    <header class="smallHeader HeaderSmallHeight relative">
-        <HeaderScratch />
-    </header>
+    <div>
+           <header class="smallHeader HeaderSmallHeight relative">
+            <HeaderScratch />
+        </header>
 
-    <main class="planMain mainWidth pad20">
+        <main class="planMain mainWidth pad20">
         
-        <div class="mainWidth marTop50">
-            <div class="flex column gap10 w50">
-                <h2 class="bodySubitle">Plan du site</h2>
-                <!-- <div class="scratchBox">
+            <div class="mainWidth marTop50">
+                <div class="flex column gap10 w50">
+                    <h2 class="bodySubitle">Plan du site</h2>
+                    <!-- <div class="scratchBox">
                     <DecorScratch />
                 </div> -->
-            </div>
+                </div>
 
-            <ul class="levelZero flex column marTop20">
-                <li class="levelOne flex alignCenter gap10">
-                    <!-- <span class="icon">circle</span> -->
-                    <NuxtLink class="levelOneTitle bodyText1" to="/">Accueil</NuxtLink>
+                <ul class="levelZero flex column marTop20">
+                    <li class="levelOne flex alignCenter gap10">
+                        <!-- <span class="icon">circle</span> -->
+                        <NuxtLink class="levelOneTitle bodyText1" to="/">Accueil</NuxtLink>
+                    </li>
+
+                    <li class="levelTwo flex alignCenter gap10">
+                        <span class="icon">circle</span>
+                        <NuxtLink class="levelOneTitle bodyText1" to="/mon-palmares">Mon Palmarès</NuxtLink>
+                    </li>
+
+                    <li class="levelOne flex alignCenter gap10">
+                        <!-- <span class="icon">circle</span> -->
+                    <NuxtLink class="levelOneTitle bodyText1" to="/coaching">Coaching</NuxtLink>
                 </li>
 
-                <li class="levelTwo flex alignCenter gap10">
-                    <span class="icon">circle</span>
-                    <NuxtLink class="levelOneTitle bodyText1" to="/mon-palmares">Mon Palmarès</NuxtLink>
-                </li>
+                    <li class="levelOne flex alignCenter gap10">
+                        <!-- <span class="icon">circle</span> -->
+                        <NuxtLink class="levelOneTitle bodyText1" to="/conferences">Conférences</NuxtLink>
+                    </li>
 
-                <li class="levelOne flex alignCenter gap10">
-                    <!-- <span class="icon">circle</span> -->
-                <NuxtLink class="levelOneTitle bodyText1" to="/coaching">Coaching</NuxtLink>
-            </li>
+                    <li class="levelOne flex alignCenter gap10">
+                        <!-- <span class="icon">circle</span> -->
+                        <NuxtLink class="levelOneTitle bodyText1" to="/livre-d-or">Livre d'or</NuxtLink>
+                    </li>
 
-                <li class="levelOne flex alignCenter gap10">
-                    <!-- <span class="icon">circle</span> -->
-                    <NuxtLink class="levelOneTitle bodyText1" to="/conferences">Conférences</NuxtLink>
-                </li>
-
-                <li class="levelOne flex alignCenter gap10">
-                    <!-- <span class="icon">circle</span> -->
-                    <NuxtLink class="levelOneTitle bodyText1" to="/livre-d-or">Livre d'or</NuxtLink>
-                </li>
-
-                <li class="levelOne flex alignCenter gap10">
-                    <!-- <span class="icon">circle</span> -->
-                    <NuxtLink class="levelOneTitle bodyText1" to="/mentions-legales">Mentions légales</NuxtLink>
-                </li>
+                    <li class="levelOne flex alignCenter gap10">
+                        <!-- <span class="icon">circle</span> -->
+                        <NuxtLink class="levelOneTitle bodyText1" to="/mentions-legales">Mentions légales</NuxtLink>
+                    </li>
 
                 
-            </ul>
+                </ul>
+        </div>
+    </main>
     </div>
-</main></template>
+</template>
 
 <script setup>
 

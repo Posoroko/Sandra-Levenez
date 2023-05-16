@@ -1,7 +1,9 @@
 <template>
-    <PageMain :pageContent="coaching" />
+    <div>
+        <PageMain :pageContent="coaching" />
 
-    <OgImageStatic />
+        <OgImageStatic />
+    </div>
 </template>
 
 <script setup>

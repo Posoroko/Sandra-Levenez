@@ -57,8 +57,14 @@ const props = defineProps({
 
 
 <style scoped>
-.widthFromProps {
-    width: v-bind(width);
-    outline: 1px solid green;
+.iconPath {
+    fill: var(--brand-sec);
+    transition: 300ms ease;
 }
+.socialNetworkIconSVG:hover .iconPath{
+    fill: var(--brand-main);
+    transition: 300ms ease;
+}
+
+
 </style>

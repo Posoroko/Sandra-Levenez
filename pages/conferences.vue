@@ -1,5 +1,7 @@
 <template>
-    <PageMain :pageContent="conferences" />
+    <div>
+        <PageMain :pageContent="conferences" />
+    </div>
 </template>
 
 <script setup>

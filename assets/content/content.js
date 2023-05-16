@@ -6,7 +6,7 @@ export const bossDetails = {
 }
 
 export const accueil = {
-    headerImage: "/images/headers/header-accueil.png",
+    // headerImage: "/images/headers/header-accueil.jpg",
     sectionPhoto: {
         title: "Une méthode déclinée entre deux pôles : Entraînement / Coaching et Conférences",
         subtitle: '<span class="initial">M</span>éthode <span class="initial">I</span>nteractions <span class="initial">L</span>événez <span class="initial">E</span>ntraînement <span class="initial">S</span>tratégie',
@@ -32,7 +32,7 @@ export const accueil = {
 }
 
 export const coaching = {
-    headerImage: "/images/headers/header-coaching.png",
+    headerImage: "/images/headers/header-coaching.jpg",
     sectionPhoto: {
         title: "Coaching sur-mesure",
         subtitle: 'Planification, suivi et accompagnement de l’entraînement',
@@ -65,7 +65,7 @@ export const coaching = {
 }
 
 export const conferences = {
-    headerImage: "/images/headers/header-conferences.png",
+    headerImage: "/images/headers/header-conferences.jpg",
     sectionPhoto: {
         title: "Conférences",
         subtitle: 'Modalités',
@@ -108,7 +108,7 @@ export const socialMedia = [
 ]
 
 export const palmares = {
-    headerImage: "/images/headers/header-palmares.png",
+    headerImage: "/images/headers/header-palmares.jpg",
     sectionLogo: {
         title: "Mon palmares", 
         subtitle:'Athlétisme/Cross country',

@@ -1,6 +1,8 @@
 <template>
-    <PageMain :pageContent="accueil" />
-    <OgImageStatic />
+    <div>
+        <PageMain :pageContent="accueil" />
+        <OgImageStatic />
+    </div>
 </template>
 
 <script setup>

@@ -1,9 +1,10 @@
 <template>
-    <header class="smallHeader HeaderSmallHeight relative">
-        <HeaderScratch />
-    </header>
+    <div>
+        <header class="smallHeader HeaderSmallHeight relative">
+            <HeaderScratch />
+        </header>
 
-    <main class="mainMentions">
+        <main class="mainMentions">
             
             <div class="mainWidth marTop50 flex column gap30">
                 <div class="flex column gap10 w50">
@@ -14,7 +15,7 @@
                 </div>
 
                 <h2>Ce site internet est la propriété de M.I.L.E.S. Performance : </h2>
-            
+        
                 <address>
                     <b>M.I.L.E.S. Performance</b> <br>
                     20, mail Gaston Bardet<br>
@@ -55,7 +56,7 @@
                     de M.I.L.E.S. Performance sont interdites et constitueraient une contrefaçon au sens des articles L 335-2 et suivants du code de la propriété
                     intellectuelle. 
                 </p>
-            
+        
                 <h2>PROTECTION DES DONNÉES PERSONNELLES </h2>
                 <p>
                     Conformément au Règlement (UE) 2016/679 relatif à la protection des données à caractère personnel et à la loi n°78/17 du 6 janvier 1978
@@ -79,6 +80,7 @@
                 </p>
             </div>
         </main>
+    </div>
 </template>
 
 <style scoped>
