@@ -5,7 +5,7 @@
             <p class="flex justifyCenter">
                 <span class="icon bookStar" v-for="indexMessage in 5" :key="indexMessage">star</span>
             </p>
-            <div class="modalText flex column gap10"></div>
+            <div class="modalText bookListFormat flex column gap10"></div>
             
         </div>
 

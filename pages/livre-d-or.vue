@@ -26,7 +26,7 @@
                                     </p>
                                 </div>
                                 <div class="bookCardTextBox marTop20">
-                                    <div class="text flex column gap10" v-html="`${message.message}`">
+                                    <div class="text bookListFormat flex column gap10" v-html="`${message.message}`">
 
                                     </div>
                                 
