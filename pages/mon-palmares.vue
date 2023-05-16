@@ -6,36 +6,47 @@
             </div>
         </HeaderMain>
 
-        <SectionMain v-if="palmares.sectionLogo">
-            <template v-slot:leftBox>
-                <PagePalmaresList :content="palmares.sectionLogo" />
-            </template>
+        <main>
+            <div class="pathBar">
+                <div class="mainWidth flex alignCenter gap20 pad20">
+                    <NuxtLink class="pathLink" to="/" >Accueil</NuxtLink>
+                    
+                    <span class="icon chevron">chevron_right</span>
 
-            <template v-slot:rightBox>
-                <SectionLogoStroke />
-            </template>
-        </SectionMain>
+                    <NuxtLink class="pathLink underline" to="#">Mon Palmarès</NuxtLink>
+                </div>
+            </div>
+            <SectionMain v-if="palmares.sectionLogo">
+                <template v-slot:leftBox>
+                    <PagePalmaresList :content="palmares.sectionLogo" />
+                </template>
 
-        <SectionMain>
-            <template v-slot:leftBox>
-                <SectionRoundImage :image="palmares.sectionPhoto1.image" />
+                <template v-slot:rightBox>
+                    <SectionLogoStroke />
+                </template>
+            </SectionMain>
+
+            <SectionMain>
+                <template v-slot:leftBox>
+                    <SectionRoundImage :image="palmares.sectionPhoto1.image" />
             
-            </template>
+                </template>
 
-            <template v-slot:rightBox>
-                <PagePalmaresList :content="palmares.sectionPhoto1" />
-            </template>
-        </SectionMain>
+                <template v-slot:rightBox>
+                    <PagePalmaresList :content="palmares.sectionPhoto1" />
+                </template>
+            </SectionMain>
 
-        <SectionMain>
-            <template v-slot:leftBox>
-                <PagePalmaresList :content="palmares.sectionPhoto2" />
-            </template>
+            <SectionMain>
+                <template v-slot:leftBox>
+                    <PagePalmaresList :content="palmares.sectionPhoto2" />
+                </template>
 
-            <template v-slot:rightBox>
-                <SectionRoundImage :image="palmares.sectionPhoto2.image" />
-            </template>
-        </SectionMain>
+                <template v-slot:rightBox>
+                    <SectionRoundImage :image="palmares.sectionPhoto2.image" />
+                </template>
+            </SectionMain>
+        </main>
 
     </div>    
 </template>
@@ -49,3 +60,17 @@ definePageMeta({
     image: '/images/coaching.jpg',
 })
 </script>
+
+<style scoped>
+.pathLink {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--brand-main);
+
+}
+.chevron {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--brand-sec);
+}
+</style>

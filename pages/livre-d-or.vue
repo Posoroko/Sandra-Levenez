@@ -6,7 +6,7 @@
             </div>
         </HeaderMain>
 
-        <main class="pad20" id="bookMain">
+        <main class="pad20">
             <div class="mainWidth">
                 <div class="">
                     <h1 class="bodyTitle">Livre d'or</h1>
@@ -30,7 +30,6 @@
 
                                     </div>
                                 
-                                    <!-- <span class="dots" v-if="message.message.length > cardPreviewLength">...</span> -->
                                 </div> 
                             </div>
                             <div class="buttonBox centered">
@@ -72,14 +71,6 @@ definePageMeta({
 const appConfig = useAppConfig();
 const directusItems = appConfig.directus.items;
 const cardPreviewLength = 500
-let bookMain = null
-
-
-onMounted(() => {
-    bookMain = document.getElementById('bookMain')
-    const styleTags = bookMain.getElementsByTagName('style')
-    console.log(styleTags)
-})
 
 const handleClick = (e) => {
     
@@ -101,12 +92,10 @@ const { data: messages } = await useAsyncData(
     async () => {
         const items = await $fetch(`${directusItems}Sandra_Levenez_book?sort[]=-date_published`) 
         const temp = [
-            items.data.splice(0, 3), items.data
+            items.data.splice(0, 3), 
+            items.data
         ]
-        // const temp = {
-        //     latests: items.data.splice(0, 3),
-        //     rest: items.data
-        // }
+        console.log(temp)
         return temp
     }
     ,

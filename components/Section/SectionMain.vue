@@ -1,5 +1,5 @@
 <template>
-    <section class="w100 marTop100 flex">
+    <section class="w100 marTop50 flex">
         <div class="mainWidthContainer mainWidth h100 flex justifyCenter alignCenter wrap">
             <div class="sectionHalfBox leftBox h100">
                 <slot name="leftBox" />

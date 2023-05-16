@@ -1,5 +1,5 @@
 <template>
-    <div class="textBox full flex column  justifyCenter gap30 pad20">
+    <div class="textBox full flex column justifyCenter gap30 pad20">
         <div class="flex column" v-if="content.title">
             <h2 class="bodyTitle">
                 {{ content.title }}
