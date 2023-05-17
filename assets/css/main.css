@@ -10,7 +10,6 @@ a {
 
 .mainWidth {
     width: min(var(--mainWidth), 100%);
-    /* padding: 0 30px; */
     margin: auto;
 }
 
@@ -43,10 +42,5 @@ a {
 .sectionMediumHeight { height: calc(var(--section100vh) * var(--medium-section-coef)); }
 .sectionSmallHeight { height: calc(var(--section100vh) * var(--small-section-coef)); }
 
-
-:root {
-    --burger-max-width: 939px;
-
-}
 
 

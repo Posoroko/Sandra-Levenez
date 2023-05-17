@@ -7,7 +7,6 @@
                 <span class="modalCloseBtn icon pointer z_2000" @click="closeMenu">close</span>
             </p>
             <HeaderMenuMain />
-            
         </div>
     </div>
 </template>
@@ -65,7 +64,7 @@ const closeMenu = () => {
 }
 .open {
     width: min(450px, 90vw);
-    height: 375px;
+    height: min(275px, 75vh);
     padding: 20px;
     transition:  300ms  ease;
 }

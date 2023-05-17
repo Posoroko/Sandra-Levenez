@@ -11,18 +11,18 @@
                     <DecorSmallScratchThin /> 
                 </div>
             
-                <div class="contactBox flex column justifyCenter alignStart gap30">
+                <div class="contactBox flex column justifyCenter gap30">
                     <a :href="`tel:${contact.telephone}`" class="contactBoxLine flex alignCenter gap10">
                         <span class="contactCard_icon icon callIcon">call</span>
                         <span class="contactCard_text reactiveLink">{{ contact.telephone }}</span>
                     </a>
 
-                    <a :href="`mailto:${contact.email}`" class="contactBoxLine flex alignCenter gap10">
+                    <a :href="`mailto:${contact.email}`" class="contactBoxLine flex  alignCenter gap10">
                         <span class="contactCard_icon icon">alternate_email</span>
                         <span class="contactCard_text reactiveLink">{{ contact.email }}</span>
                     </a>
 
-                    <div class="contactBoxLine flex alignCenter gap10">
+                    <div class="contactBoxLine flex  alignCenter gap10">
                         <span class="contactCard_icon icon">location_on</span>
                         <span class="contactCard_text">Bretagne</span>
                     </div>
@@ -74,8 +74,17 @@ import { socialMedia } from '@/assets/content/content'
     display: flex;
     flex-wrap: wrap;
 }
+
 .contactBox {
     padding: 20px;
+}
+@media (max-width: 400px) {
+    .contactCard {
+        padding: 10px 0px;
+    }
+    .contactBox {
+    padding: 0px;
+}
 }
 .contactCard_icon {
     font-size: 24px;
@@ -84,7 +93,7 @@ import { socialMedia } from '@/assets/content/content'
 }
 .contactCard_text {
     font-family: "Montserrat", sans-serif;
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(14px, 2.5vw, 24px);
     font-weight: 700;
     font-style: normal;
     color: var(--brand-main);

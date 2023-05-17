@@ -1,15 +1,16 @@
 <template>
         <HeaderMain>
-            <div class="full">
-                <img v-if="route.path != '/'" class="headerimage objectFitCover" :src="pageContent.headerImage" alt="">
-                <div v-else>
+
+                <img v-if="route.path != '/'" class="headerimage headerImageLarge objectFitCover" :src="pageContent.headerImageLarge" alt="">
+                <img v-if="route.path != '/'" class="headerimage headerImageMid objectFitCover" :src="pageContent.headerImageMid" alt="">
+                <div class="h100" v-else>
                     <HeaderHome />
                 </div>
-            </div>
+
         </HeaderMain>
 
         <main class="pageMain">
-            <SectionMain>
+            <SectionMain :rowReverse="section1WrapReverse">
                 <template v-slot:leftBox>
                     <SectionTextBox :content="pageContent.sectionPhoto" />
                 </template>
@@ -19,7 +20,7 @@
                 </template>
             </SectionMain>
 
-            <SectionMain>
+            <SectionMain :wrapReverse="section2WrapReverse">
                 <template v-slot:leftBox>
                     <SectionQuote v-if="pageContent.sectionQuote.quote.length > 10" :text="pageContent.sectionQuote.quote" />
                     <SectionLogoStroke v-if="pageContent.sectionQuote.quote == 'logo'" />
@@ -38,7 +39,7 @@
                 </template>
             </SectionMain>
 
-            <SectionMain v-if="pageContent.sectionLogo">
+            <SectionMain :rowReverse="section3WrapReverse" v-if="pageContent.sectionLogo">
                 <template v-slot:leftBox>
                     <SectionTextBox :content="pageContent.sectionLogo" />
                 </template>
@@ -56,23 +57,55 @@ console.log(route.path)
 
 
 const props = defineProps({
-    pageContent: {
-        type: Object,
-        required: true
-    }
+    pageContent: Object,
+    section1WrapReverse: Boolean,
+    section2WrapReverse: Boolean,
+    section3WrapReverse: Boolean,
 })
 </script>
 
 <style scoped>
-@media (max-width: 850px) {
+.headerImageLarge {
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .headerImageLarge {
+    display: none;
+}
+.headerImageMid {
+    display: block;
+}
+}
+@media (min-width: 700px) {
+    .headerImageLarge {
+    display: block;
+}
+.headerImageMid {
+    display: none;
+}
+}
+
+
+/* @media (max-width: 399px) {
     .headerimage {
-        object-position: -275px;
+        object-position: -420px;
+    }
+}
+@media (min-width: 400px) and (max-width: 699px) {
+    .headerimage {
+        object-position: -400px;
+    }
+}
+@media (min-width: 700px) and (max-width: 850px) {
+    .headerimage {
+        object-position: -300px;
     }
 }
 @media (min-width: 850px) {
     .headerimage {
         object-position: left;
     }
-}
+} */
 
 </style>

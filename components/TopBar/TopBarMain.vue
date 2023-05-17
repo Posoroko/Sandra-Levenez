@@ -32,7 +32,11 @@
     height: clamp(80px, 10vw, 150px);
     aspect-ratio: 398/203; /* set by the dimensiosn of the svg file */
 }
-
+@media (max-width: 400px) {
+    .topBarContainer {
+        height: 60px;
+    }
+}
 
 </style>
 

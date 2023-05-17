@@ -11,11 +11,9 @@
         <h3 class="bodySubtitle">
             {{ content.subtitle }}
         </h3>
-        <ul class="palmaresList flex column gap10">
-            <li class="bodyText palmaresListItem flex alignCenter" v-for="(item, index) in content.list" :key="index">
-
+        <ul class="palmaresList flex column alignStart gap10">
+            <li class="bodyText relative palmaresListItem flex" v-for="(item, index) in content.list" :key="index">
                 {{ item }}
-
             </li>
         </ul>
     </div>
@@ -33,15 +31,20 @@ const props = defineProps({
 <style scoped>
 .palmaresListItem {
     text-align: left;
+    padding-left: 25px;
 }
 .palmaresListItem::before {
-    width: 20px;
+    width: 25px;
     height: 100%;
     content: "\2022";
     font-weight: 900;
-    display: inline-block;
+    position: absolute;
+    left: 0;
     list-style-type: disc;
     color: var(--brand-sec);
     list-style-position: inside;
+    /* border: 1px solid var(--brand-sec); */
+    display: flex;
+    justify-content: center;
 }
 </style>

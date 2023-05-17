@@ -1,5 +1,5 @@
 <template>
-    <div class="h100 flex gap10">
+    <div class="h100 flex gap10 ">
         <div class="header_leftBox"> 
             <img src="/images/headers/accueil1.jpg" alt="">
         </div>
@@ -20,7 +20,7 @@
 .header_leftBox, 
 .header_rightBox {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 .header_rightBottomBox,

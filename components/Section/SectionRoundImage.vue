@@ -41,6 +41,7 @@ const handleImageClick = (e) => {
     width: 75%;
     aspect-ratio: 1/1;
     overflow: hidden;
+    margin: 0 auto;
 }
 .imageFrame {
     position: absolute;

@@ -1,6 +1,10 @@
 <template>
     <div>
-        <PageMain :pageContent="accueil" />
+        <PageMain 
+            :pageContent="accueil" 
+            :section1WrapReverse="false"
+            :section2WrapReverse="true"
+            :section3WrapReverse="false" />
         <OgImageStatic />
     </div>
 </template>

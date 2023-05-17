@@ -2,7 +2,7 @@
     <div>
         <HeaderMain>
             <div class="full">
-                <img class="objectFitCover" :src="palmares.headerImage" alt="">
+                <img class="objectFitCover" :src="palmares.headerImageLarge" alt="">
             </div>
         </HeaderMain>
 
@@ -16,7 +16,7 @@
                     <NuxtLink class="pathLink underline" to="#">Mon Palmarès</NuxtLink>
                 </div>
             </div>
-            <SectionMain v-if="palmares.sectionLogo">
+            <SectionMain wrapReverse="false" v-if="palmares.sectionLogo">
                 <template v-slot:leftBox>
                     <PagePalmaresList :content="palmares.sectionLogo" />
                 </template>
@@ -26,7 +26,7 @@
                 </template>
             </SectionMain>
 
-            <SectionMain>
+            <SectionMain wrapReverse="true">
                 <template v-slot:leftBox>
                     <SectionRoundImage :image="palmares.sectionPhoto1.image" />
             

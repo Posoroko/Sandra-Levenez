@@ -10,11 +10,19 @@
     width: min(250px, 40vw);
     position: absolute;
     right: 20px;
-    bottom: max(50px, 15vh);
+    bottom: 150%;
     background-color: #0000001c;
     border-radius: 10px;
     padding: 10px;
 }
+
+@media (min-width: 940px) and (max-width: 1099px) {
+    .pilejeBox {
+        bottom: 210%;
+    }
+}
+
+
 .pilejeBox p {
     font-weight: 600;
 }

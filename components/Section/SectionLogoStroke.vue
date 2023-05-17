@@ -27,6 +27,12 @@
 .logoStrokeBox {
     width: 75%;
     aspect-ratio: 1/1;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .logoStrokeBox {
+        display: none;
+    }
 }
 .st0 {
     fill: none;
