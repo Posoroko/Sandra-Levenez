@@ -63,8 +63,8 @@ const closeMenu = () => {
     overflow: hidden;
 }
 .open {
-    width: min(450px, 90vw);
-    height: min(275px, 75vh);
+    width: min(350px, 80vw);
+    /* height: min(275px, 100vh); */
     padding: 20px;
     transition:  300ms  ease;
 }

@@ -16,9 +16,9 @@
     padding: 10px;
 }
 
-@media (min-width: 940px) and (max-width: 1099px) {
+@media (min-width: 940px) and (max-width: 1315px) {
     .pilejeBox {
-        bottom: 210%;
+        bottom: 310%;
     }
 }
 

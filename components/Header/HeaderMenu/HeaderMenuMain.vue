@@ -1,5 +1,5 @@
 <template>
-    <nav class="menuBox flex  h100">
+    <nav class="menuBox flex">
         <NuxtLink class="menuButton menuButton1" to="/coaching">
             <img class="menuButtonImage" src="/images/montre.jpg" alt="">
             <div class="cover cover1"></div>
@@ -29,12 +29,11 @@ const emits = defineEmits(['closeMenu'])
 <style scoped>
 .menuBox {
     width: 100%;
-    justify-content: flex-end;
+    
     
 }
 
 .menuButton {
-    
     aspect-ratio: 1/1;
     border-radius: 15px;
     border: 2px solid white;
@@ -43,7 +42,10 @@ const emits = defineEmits(['closeMenu'])
     position: relative;
     box-shadow: 5px 5px 10px black;
 }
-
+.menuButton:hover .cover{
+    opacity: 1;
+    transition: 300ms ease;
+}
 
 .menuButtonImage {
     width: 101%;
@@ -77,19 +79,18 @@ const emits = defineEmits(['closeMenu'])
     right: 15px;
 }
 
-.menuButton:hover .cover{
-    opacity: 1;
-    transition: 300ms ease;
-}
+
 
 @media (max-width: 939px) {
     .menuBox {
+        /* height: 450px; */
         flex-direction: column;
         align-items: center;
+        justify-content: flex-end;
     }
     .menuButton {
         width: 100%;
-        height: 25%;
+        height: min(100px, 17vh);
     }
     .menuButton2 {
     transform: translateY(-2px);
@@ -101,13 +102,15 @@ const emits = defineEmits(['closeMenu'])
 @media (min-width: 940px) {
     .menuBox {
         flex-direction: row;
+        justify-content: center;
         position: absolute;
         bottom: 50%;
         left: 0%;
         transform: translateY(50%);
     }
     .menuButton {
-        width: max(180px, 12vw);
+        /* width: max(180px, 12vw); */
+        height: 250px;
     }
     .menuButton2 {
         transform: translateX(-2px);
