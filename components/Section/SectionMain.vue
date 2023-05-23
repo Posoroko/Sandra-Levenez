@@ -12,9 +12,11 @@
     </section>
 </template>
 <script setup>
+
 const props = defineProps({
     wrapReverse: Boolean
 })
+
 </script>
 <style>
 .defaultWrap {

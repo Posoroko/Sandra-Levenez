@@ -69,7 +69,7 @@ const props = defineProps({
     display: none;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 1099px) {
     .headerImageLarge {
     display: none;
 }
@@ -77,7 +77,7 @@ const props = defineProps({
     display: block;
 }
 }
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
     .headerImageLarge {
     display: block;
 }
@@ -86,26 +86,5 @@ const props = defineProps({
 }
 }
 
-
-/* @media (max-width: 399px) {
-    .headerimage {
-        object-position: -420px;
-    }
-}
-@media (min-width: 400px) and (max-width: 699px) {
-    .headerimage {
-        object-position: -400px;
-    }
-}
-@media (min-width: 700px) and (max-width: 850px) {
-    .headerimage {
-        object-position: -300px;
-    }
-}
-@media (min-width: 850px) {
-    .headerimage {
-        object-position: left;
-    }
-} */
 
 </style>

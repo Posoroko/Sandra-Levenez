@@ -27,6 +27,9 @@
     font-weight: 600;
 }
 @media (max-width: 554px) {
+    .pilejeBox p {
+    font-size: 12px;
+}
     .pilejePNG {
         width: 100%;
     }

@@ -16,7 +16,7 @@
                     <NuxtLink class="pathLink underline" to="#">Mon Palmarès</NuxtLink>
                 </div>
             </div>
-            <SectionMain wrapReverse="false" v-if="palmares.sectionLogo">
+            <SectionMain :wrapReverse="false" v-if="palmares.sectionLogo">
                 <template v-slot:leftBox>
                     <PagePalmaresList :content="palmares.sectionLogo" />
                 </template>
@@ -26,7 +26,7 @@
                 </template>
             </SectionMain>
 
-            <SectionMain wrapReverse="true">
+            <SectionMain :wrapReverse="true">
                 <template v-slot:leftBox>
                     <SectionRoundImage :image="palmares.sectionPhoto1.image" />
             
