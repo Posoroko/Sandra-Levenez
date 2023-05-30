@@ -63,7 +63,7 @@
 import { readInModal } from '@/composables/utilities'
 
 definePageMeta({
-    title: "SandraLevenez | Livre d'or",
+    title: "Livre d'or",
     description: 'Avis des clients de Sandra Levenez',
     image: '/images/coaching.jpg',
 })

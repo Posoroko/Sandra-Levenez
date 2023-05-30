@@ -3,17 +3,19 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: 'https://milesperformance.com',
-            siteTitle: 'Miles Performance | Sandra Levenez, coach sportif et conférencière',
+            siteName: 'Miles Performance | Sandra Levenez, coach sportif et conférencière',
             siteDescription: 'Site de Sandra Levenez, sportive de haut-niveau, offre un service de coaching sportif et anime des conférences.',
             language: 'fr-FR',
-            test: 'eric.com'
+            test: 'eric.com',
+            titleSeparator: '|'
         }
     },
     app: {
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: '%siteTitle',
+            titleTemplate: '%pageTitle %titleSeparator %siteName',
+            // title: 'Miles Performance | Sandra Levenez, coach sportif et conférencière',
             htmlAttrs: {
                 lang: 'fr'
             },
@@ -60,7 +62,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'og:title',
-                    content: '%siteTitle',
+                    content: '%siteName',
                 },
                 {
                     name: 'og:description',
@@ -72,11 +74,11 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'og:url',
-                    content: '%test',
+                    content: '%siteUrl',
                 },
                 {
                     name: 'og:site_name',
-                    content: '%siteTitle',
+                    content: '%siteName',
                 },
                 {
                     name: 'og:locale',
@@ -100,7 +102,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'twitter:title',
-                    content: '%siteTitle',
+                    content: '%siteName',
                 },
                 {
                     name: 'twitter:description',

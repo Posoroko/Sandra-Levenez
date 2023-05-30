@@ -13,14 +13,11 @@
 import { accueil } from "@/assets/content/content"
 
 useSeoMeta({
-    title: 'Maison',
-    // description: 'Sandra Levenez, coach sportive et athlète',
+    title: 'Accueil',
+    description: 'Sandra Levenez, sportive de haut niveau, vous propose des conférences sur le sport.',
+    image: '/images/coaching.jpg',
 })
-defineOgImageStatic({
-    title: 'Sandra Levenez, coach',
-    background: 'blue'
-})
-defineOgImageStatic()
+
 </script>
 
 <style scoped>

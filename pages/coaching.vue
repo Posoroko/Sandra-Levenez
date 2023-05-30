@@ -10,7 +10,7 @@
 import { coaching } from "@/assets/content/content"
 
 definePageMeta({
-    title: 'SandraLevenez | Coaching',
+    title: 'Coaching',
     description: 'Coaching selon la méthode Sandra Levenez',
     image: '/images/coaching.jpg',
 })
