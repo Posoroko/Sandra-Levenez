@@ -1,5 +1,6 @@
 <template>
-    <div class="logoStrokeBox centered" :class="{ 'displayNone' : route.path == '/conferences'}">
+    <!-- <div class="logoStrokeBox centered"> -->
+        <div class="logoStrokeBox centered" :class="{ 'conferences': route.path == '/conferences' }">
         <svg version="1.1" class="logoStrokeSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 535.4 427.9" style="enable-background:new 0 0 535.4 427.9;" xml:space="preserve">
         
@@ -35,12 +36,15 @@ console.log(route.path)
     aspect-ratio: 1/1;
     margin: 0 auto;
 }
-.logoStrokeBox.displayNone {
-        display: none;
-    }
+
 .st0 {
     fill: none;
     stroke: var(--brand-main);
     stroke-miterlimit: 10;
+}
+@media (max-width: 849px) {
+   .logoStrokeBox.conferences {
+        display: none;
+    }
 }
 </style>

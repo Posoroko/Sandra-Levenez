@@ -4,7 +4,7 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'Sandra Levenez, coach sportif et conférencière',
+            title: 'Miles Performance | Sandra Levenez, coach sportif et conférencière',
             htmlAttrs: {
                 lang: 'fr'
             },
@@ -59,7 +59,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: 'https://sandralevenez.netlify.app',
-            siteName: 'Sandra Levenez, coach sportif et conférencière',
+            siteName: 'Miles Performance | Sandra Levenez, coach sportif et conférencière',
             siteDescription: 'Site de Sandra Levenez, sportive de haut-niveau, offre un service de coaching sportif et anime des conférences.',
             language: 'fr-FR',
         }
