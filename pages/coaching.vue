@@ -1,8 +1,6 @@
 <template>
     <div>
         <PageMain :pageContent="coaching" />
-
-        <OgImageStatic />
     </div>
 </template>
 
