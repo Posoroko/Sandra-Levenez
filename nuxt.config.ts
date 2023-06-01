@@ -45,7 +45,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'og:image',
-                    content: '/favicon/android-chrome-512x512.png',
+                    content: '/favicon/miles_og_image_1200x630.png',
                 },
                 {
                     name: 'og:url',
