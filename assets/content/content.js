@@ -13,7 +13,7 @@ export const accueil = {
         image: {
             url_Small: "/images/arrivee.jpg",
             url_Large: "/images/arrivee.jpg",
-            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+            imageAlt: "Sandra Lévénez à l'arrivée d'une course",
         }
     },
     sectionQuote: {
@@ -41,7 +41,7 @@ export const coaching = {
         image: {
             url_Small: "/images/coaching.jpg",
             url_Large: "/images/coaching.jpg",
-            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+            imageAlt: "Sandra Lévénez à l'arrivée d'une course",
         },
         tags: {
             one: "  <span class='highlighted'>  </span>",
@@ -75,7 +75,7 @@ export const conferences = {
         image: {
             url_Small: "/images/conference.jpg",
             url_Large: "/images/conference.jpg",
-            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+            imageAlt: "Sandra Lévénez à l'arrivée d'une course",
         },
         logo: false
     },
@@ -142,7 +142,7 @@ export const palmares = {
         image: {
             url_Small: "/images/arrivee.jpg",
             url_Large: "/images/arrivee.jpg",
-            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+            imageAlt: "Sandra Lévénez à l'arrivée d'une course",
         },
         button: false,
         logo: false
@@ -160,7 +160,7 @@ export const palmares = {
         image: {
             url_Small: "/images/velo-01.jpg",
             url_Large: "/images/velo-01.jpg",
-            imageAlt: "Sandra Levenez à l'arrivée d'une course",
+            imageAlt: "Sandra Lévénez à l'arrivée d'une course",
         },
         button: false,
         logo: false

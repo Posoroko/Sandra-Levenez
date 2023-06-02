@@ -56,7 +56,7 @@ import { palmares } from '@/assets/content/content'
 
 definePageMeta({
     title: "Mon palmarès",
-    description: 'Palmarès de Sandra Levenez, sportive de haut niveau',
+    description: "Palmarès des victoires, accomplissements et faits marquants de la carrière de Sandra Lévénez, double championne du monde de duathlon et cycliste pro.",
     image: '/images/coaching.jpg',
 })
 </script>

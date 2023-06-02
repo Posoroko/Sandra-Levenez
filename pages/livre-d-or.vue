@@ -64,7 +64,7 @@ import { readInModal } from '@/composables/utilities'
 
 definePageMeta({
     title: "Livre d'or",
-    description: 'Avis des clients de Sandra Levenez',
+    description: 'Les athlètes coachés par Sandra Lévénez, double championne du monde et cycliste pro, partagent ici leur expérience avec la méthode M.I.L.E.S.',
     image: '/images/coaching.jpg',
 })
 

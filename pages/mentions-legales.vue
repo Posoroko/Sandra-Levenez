@@ -24,7 +24,7 @@
                     sandra.levenez@orange.fr<br>
                 </address>
 
-                <p> <b>Directeur de publication :</b> Sandra LEVENEZ.</p>
+                <p> <b>Directeur de publication :</b> Sandra Lévénez.</p>
 
                 <h2>CONCEPTION DU SITE </h2>
 
