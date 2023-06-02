@@ -3,8 +3,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: 'https://milesperformance.com',
-            siteName: 'Miles Performance | Sandra Levenez, coach sportif et conférencière',
-            siteDescription: 'Site de Sandra Levenez, sportive de haut-niveau, offre un service de coaching sportif et anime des conférences.',
+            siteName: 'M.I.L.E.S. Performance | Sandra Lévénez, coaching et conférences',
+            siteDescription: "Sandra Lévénez, double championne du monde de duathlon et cycliste pro.  Coaching par planification et suivi, conférences et partage d'expériences.",
             language: 'fr-FR',
             titleSeparator: '|'
         }
