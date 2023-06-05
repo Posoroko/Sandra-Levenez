@@ -20,7 +20,7 @@
                 </template>
             </SectionMain>
 
-            <SectionMain :wrapReverse="section2WrapReverse">
+            <LazySectionMain :wrapReverse="section2WrapReverse">
                 <template v-slot:leftBox>
                     <SectionQuote v-if="pageContent.sectionQuote.quote.length > 10" :text="pageContent.sectionQuote.quote" />
                     <SectionLogoStroke v-if="pageContent.sectionQuote.quote == 'logo'" />
@@ -37,9 +37,9 @@
                         </NuxtLink>
                     </div>
                 </template>
-            </SectionMain>
+            </LazySectionMain>
 
-            <SectionMain :rowReverse="section3WrapReverse" v-if="pageContent.sectionLogo">
+            <LazySectionMain :rowReverse="section3WrapReverse" v-if="pageContent.sectionLogo">
                 <template v-slot:leftBox>
                     <SectionTextBox :content="pageContent.sectionLogo" />
                 </template>
@@ -47,7 +47,7 @@
                 <template v-slot:rightBox>
                     <SectionLogoStroke />
                 </template>
-            </SectionMain>
+            </LazySectionMain>
         </main>
 </template>
 

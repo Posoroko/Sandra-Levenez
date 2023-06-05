@@ -4,7 +4,7 @@
     
     <TopBarMain />
 
-    <FooterMain />
+    <LazyFooterMain />
 
     <ModalImage />
     <ModalText />
