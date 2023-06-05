@@ -13,7 +13,7 @@
             <TopBarContactBox />
         </div>
 
-        <NuxtLink to="/" class="topBar_logoCardBox absolute top0 bottom0 left0">
+        <NuxtLink to="/" class="topBar_logoCardBox absolute top0 bottom0 left0" aria-label="Logo du site et lien vers la page d'accueil">
             <TopBarLogoCard />
         </NuxtLink>
     </div>
