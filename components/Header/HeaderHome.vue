@@ -1,16 +1,16 @@
 <template>
     <div class="h100 flex gap10 ">
         <div class="header_leftBox"> 
-            <img src="/images/headers/accueil1.jpg" alt="">
+            <img src="/images/headers/accueil1.webp" alt="Photo accueil Miles Performance, Site de Sandra Lévénez">
         </div>
 
         <div class="header_rightBox flex column gap10">
             <div class="header_rightTopBox">
-                <img src="/images/headers/accueil2.jpg" alt="">
+                <img src="/images/headers/accueil2.webp" alt="Photo accueil Miles Performance, Site de Sandra Lévénez">
             </div>
 
             <div class="header_rightBottomBox">
-                <img src="/images/headers/accueil3.jpg" alt="">
+                <img src="/images/headers/accueil3.webp" alt="Photo accueil Miles Performance, Site de Sandra Lévénez">
             </div>
         </div>
     </div>
