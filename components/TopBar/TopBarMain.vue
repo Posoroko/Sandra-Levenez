@@ -4,6 +4,7 @@
         <div class="topBar_bar w100 flex justifyBetween">
             <div class="logoCardPlaceHolder"></div>
             <TopBarTabBox />
+            
             <TopBarBurgerMenu />
 
             <div class="topBarScratchBox"> <DecorSmallScratch /> </div>

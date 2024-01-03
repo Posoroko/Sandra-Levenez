@@ -1,7 +1,18 @@
+<script setup>
+const appConfig = useAppConfig()
+const contact = appConfig.contact
+</script>
+
 <template>
     <div class="topBarContactBox">
-        <span class="contact_icon icon callIcon">call</span>
-        <span class="contact_icon icon ">alternate_email</span>
+        <a :href="`tel:${contact.telephone}`" class="topBarTab">
+            <span class="contact_icon icon callIcon">call</span>
+        </a>
+
+        <a :href="`mailto:${contact.email}`" class="topBarTab">
+            <span class="contact_icon icon ">alternate_email</span>
+        </a>
+
         <span class="contact_icon icon ">location_on</span>
     </div>
 </template>
