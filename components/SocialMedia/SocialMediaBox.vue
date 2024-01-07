@@ -14,9 +14,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.contactCardIconbox {
-    
-}
+
 .contactCardIconbox .iconBox {
     width: clamp(40px, 4vw, 55px);
     aspect-ratio: 1/1;
