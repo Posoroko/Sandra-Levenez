@@ -6,6 +6,7 @@
             <p class="flex justifyEnd pad20">
                 <span class="modalCloseBtn icon pointer z_2000" @click="closeMenu">close</span>
             </p>
+
             <HeaderMenuMain />
         </div>
     </div>

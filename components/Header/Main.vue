@@ -2,8 +2,6 @@
     <header class="">
         <HeaderScratch />
         <slot/>
-
-        
     </header>
 </template>
 

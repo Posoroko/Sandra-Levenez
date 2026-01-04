@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    compatibilityDate: '2025-01-04',
     runtimeConfig: {
         public: {
             siteUrl: 'https://milesperformance.com',
@@ -102,9 +103,15 @@ export default defineNuxtConfig({
         '@/assets/css/modals.css',
     ],
     ssr: true,
-    extends: [
-        'nuxt-seo-kit'
+    modules: [
+        '@nuxtjs/seo'
     ],
+    site: {
+        url: 'https://milesperformance.com',
+        name: 'M.I.L.E.S. Performance | Sandra Lévénez, coaching et conférences',
+        description: "Sandra Lévénez, double championne du monde de duathlon et cycliste pro.  Coaching par planification et suivi, conférences et partage d'expériences.",
+        defaultLocale: 'fr',
+    },
     
     routeRules: {
         // for all routes to be indexed by search engines

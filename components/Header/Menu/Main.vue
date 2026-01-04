@@ -1,5 +1,5 @@
 <template>
-    <nav class="menuBox flex">
+    <nav class="menuBox flex gap10">
         <NuxtLink class="menuButton menuButton1" to="/coaching">
             <img class="menuButtonImage" src="/images/montre.jpg" alt="">
             <div class="cover cover1"></div>
@@ -29,8 +29,6 @@ const emits = defineEmits(['closeMenu'])
 <style scoped>
 .menuBox {
     width: 100%;
-    
-    
 }
 
 .menuButton {
